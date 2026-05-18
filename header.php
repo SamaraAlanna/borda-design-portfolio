@@ -81,17 +81,11 @@
     font-weight: 400;
     color: var(--text-muted);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color 0.3s;
     position: relative;
     padding-bottom: 0.3rem;
   }
-  .nav-links a:hover { color: var(--text); }
-
-  /* Linha rosa abaixo do link ativo */
-  .nav-links a.active {
-    color: var(--text);
-  }
-  .nav-links a.active::after {
+  .nav-links a::after {
     content: '';
     position: absolute;
     bottom: -6px;
@@ -100,7 +94,12 @@
     height: 2px;
     background: var(--accent);
     border-radius: 99px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
   }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a.active { color: var(--text); }
+  .nav-links a.active::after { opacity: 1; }
 
   .nav-cta {
     background: var(--accent);
