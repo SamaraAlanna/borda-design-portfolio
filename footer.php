@@ -14,7 +14,7 @@
 
 <footer>
   <div class="footer-inner">
-    <p class="footer-copy">© 2025 Samara Alanna. Feito com intenção.</p>
+    <p class="footer-copy">© 2025 Samara Alanna.</p>
     <div class="footer-links">
       <a href="#" target="_blank">Instagram</a>
       <a href="#" target="_blank">LinkedIn</a>
@@ -23,3 +23,17 @@
     </div>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return;
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
