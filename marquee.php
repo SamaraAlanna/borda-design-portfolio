@@ -10,6 +10,7 @@
     gap: 2.5rem;
     animation: marquee 28s linear infinite;
     width: max-content;
+    will-change: transform;
   }
   .marquee-item {
     font-size: 0.72rem;
@@ -51,8 +52,8 @@
     <span class="marquee-item">PHP <span>✦</span></span>
     <span class="marquee-item">Python <span>✦</span></span>
     <span class="marquee-item">Figma <span>✦</span></span>
-    <span class="marquee-item">Framer <span>✦</span></span>
     <span class="marquee-item">WordPress <span>✦</span></span>
+    <span class="marquee-item">Framer <span>✦</span></span>
     <span class="marquee-item">Design System <span>✦</span></span>
   </div>
 </div>

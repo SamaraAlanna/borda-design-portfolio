@@ -3,6 +3,8 @@
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   .hero-wrap::after {
@@ -28,13 +30,14 @@
   .hero {
     position: relative;
     z-index: 1;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
-    padding: 0 2.5rem;
+    padding: 2rem 2.5rem 3rem;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -129,4 +132,5 @@
       <a href="#projetos" class="btn-ghost">Ver projetos</a>
     </div>
   </section>
+  <?php include 'marquee.php'; ?>
 </div>

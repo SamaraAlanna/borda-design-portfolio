@@ -10,7 +10,6 @@
 
 <?php include 'header.php'; ?>
 <?php include 'hero.php'; ?>
-<?php include 'marquee.php'; ?>
 <?php include 'sobre.php'; ?>
 <?php include 'projetos.php'; ?>
 <?php include 'servicos.php'; ?>
