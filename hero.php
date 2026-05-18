@@ -67,25 +67,31 @@
     50%       { opacity: 0.35; transform: scale(0.65); }
   }
 
-  /* Título forçado em 2 linhas */
+  /* Título em 2 linhas */
   .hero h1 {
-    font-size: clamp(2.6rem, 5vw, 4.2rem);
+    font-size: clamp(2.8rem, 4.2vw, 3.8rem);
     font-weight: 800;
-    line-height: 1.08;
+    line-height: 1.1;
     letter-spacing: -0.03em;
     color: var(--text);
-    max-width: 580px;
+    max-width: 820px;
     margin-bottom: 1.5rem;
+    white-space: nowrap;
   }
 
+  /* Descrição em 2 linhas */
   .hero-desc {
     font-size: 0.97rem;
     font-weight: 400;
     color: var(--text-muted);
-    max-width: 520px;
+    max-width: 820px;
     line-height: 1.75;
     margin-bottom: 2.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+
   .hero-actions {
     display: flex;
     align-items: center;

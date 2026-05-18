@@ -79,21 +79,21 @@
     text-decoration: none;
     transition: color 0.2s;
     position: relative;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.3rem;
   }
   .nav-links a:hover { color: var(--text); }
 
-  /* Linha rosa na seção ativa */
+  /* Linha rosa abaixo do link ativo */
   .nav-links a.active {
     color: var(--text);
   }
   .nav-links a.active::after {
     content: '';
     position: absolute;
-    bottom: -0.25rem;
+    bottom: -6px;
     left: 0;
     right: 0;
-    height: 1.5px;
+    height: 2px;
     background: var(--accent);
     border-radius: 99px;
   }
@@ -144,8 +144,7 @@
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
-      const sectionTop = section.offsetTop - 100;
-      if (window.scrollY >= sectionTop) {
+      if (window.scrollY >= section.offsetTop - 100) {
         current = section.getAttribute('id');
       }
     });
