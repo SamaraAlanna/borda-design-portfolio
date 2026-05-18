@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
+    min-height: 280px;
     transition: background 0.2s;
     position: relative;
     overflow: hidden;
