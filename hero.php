@@ -10,23 +10,28 @@
     margin: 0 auto;
     overflow: hidden;
   }
+
+  /* Glow — círculo grande posicionado abaixo, só a borda superior aparece */
   .hero::after {
     content: '';
     position: absolute;
-    bottom: -60px;
+    bottom: -420px;
     left: 50%;
     transform: translateX(-50%);
-    width: 120%;
-    height: 600px;
-    background: radial-gradient(ellipse at center bottom,
-      rgba(200, 80, 140, 0.45) 0%,
-      rgba(230, 183, 211, 0.25) 25%,
-      rgba(180, 80, 150, 0.10) 55%,
-      transparent 72%
+    width: 900px;
+    height: 900px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+      rgba(180, 80, 140, 0.55) 0%,
+      rgba(210, 130, 180, 0.30) 35%,
+      rgba(230, 183, 211, 0.12) 60%,
+      transparent 75%
     );
+    filter: blur(60px);
     pointer-events: none;
     z-index: 0;
   }
+
   .hero > * { position: relative; z-index: 1; }
 
   .hero-badge {
