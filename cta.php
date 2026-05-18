@@ -1,5 +1,5 @@
 <style>
-  .cta { padding: 8rem 2.5rem; text-align: center; position: relative; overflow: hidden; }
+  .cta { padding: 8rem 2.5rem; min-height: calc(100vh - 64px); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; }
   .cta::before {
     content: ''; position: absolute; bottom: -60px; left: 50%; transform: translateX(-50%);
     width: 600px; height: 350px;

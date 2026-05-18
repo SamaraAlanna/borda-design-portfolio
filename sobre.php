@@ -15,7 +15,6 @@
   }
   .sobre {
     padding: 6rem 0;
-    border-bottom: 0.5px solid var(--border);
   }
   .sobre-text { margin-bottom: 3rem; }
   .sobre-title-row { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.5rem; }

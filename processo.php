@@ -1,5 +1,5 @@
 <style>
-  .processo { padding: 6rem 0; border-bottom: 0.5px solid var(--border); }
+  .processo { padding: 6rem 0; }
   .processo h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 3rem; max-width: 480px; }
   .processo-steps {
     display: grid; grid-template-columns: repeat(4, 1fr);

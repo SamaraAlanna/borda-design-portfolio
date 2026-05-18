@@ -1,7 +1,6 @@
 <style>
   .marquee-wrap {
     border-top: 0.5px solid var(--border);
-    border-bottom: 0.5px solid var(--border);
     overflow: hidden;
     padding: 0.9rem 0;
     background: var(--bg2);

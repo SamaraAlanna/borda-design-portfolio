@@ -1,5 +1,5 @@
 <style>
-  .servicos { padding: 6rem 0; border-bottom: 0.5px solid var(--border); }
+  .servicos { padding: 6rem 0; }
   .servicos-header { margin-bottom: 3rem; }
   .servicos-header p { font-size: 0.95rem; color: var(--text-muted); max-width: 440px; line-height: 1.7; margin-top: 0.75rem; }
   .servicos-carousel-wrapper { position: relative; }
@@ -27,12 +27,12 @@
     display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1.25rem;
   }
   .carousel-btn {
-    background: var(--bg2); border: 0.5px solid var(--border); border-radius: 99px;
-    color: var(--text-muted); width: 36px; height: 36px;
+    background: var(--accent-dim); border: 1px solid var(--accent-border); border-radius: 99px;
+    color: var(--accent); width: 44px; height: 44px;
     display: flex; align-items: center; justify-content: center;
-    cursor: pointer; font-size: 1rem; transition: background 0.2s, color 0.2s, border-color 0.2s;
+    cursor: pointer; font-size: 1.1rem; transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
-  .carousel-btn:hover { background: var(--bg3); color: var(--text); border-color: var(--border-hover); }
+  .carousel-btn:hover { background: var(--accent); color: #1a1018; border-color: var(--accent); }
 
   @media (max-width: 960px) { .servico-card { flex: 0 0 calc(50% - 1px); } }
   @media (max-width: 600px) { .servico-card { flex: 0 0 88%; } }

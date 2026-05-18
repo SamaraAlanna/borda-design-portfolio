@@ -1,7 +1,6 @@
 <style>
   .projetos {
     padding: 6rem 0;
-    border-bottom: 0.5px solid var(--border);
   }
   .section-header {
     display: flex;
