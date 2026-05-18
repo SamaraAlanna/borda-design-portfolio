@@ -5,7 +5,6 @@
     overflow: hidden;
   }
 
-  /* Feixe elipse horizontal na base da hero */
   .hero-wrap::after {
     content: '';
     position: absolute;
@@ -16,9 +15,9 @@
     height: 520px;
     border-radius: 50%;
     background: radial-gradient(ellipse at center,
-      rgba(230, 183, 211, 0.45) 0%,
-      rgba(230, 183, 211, 0.22) 35%,
-      rgba(230, 183, 211, 0.07) 60%,
+      rgba(230,183,211,0.45) 0%,
+      rgba(230,183,211,0.22) 35%,
+      rgba(230,183,211,0.07) 60%,
       transparent 75%
     );
     filter: blur(70px);
@@ -68,15 +67,17 @@
     50%       { opacity: 0.35; transform: scale(0.65); }
   }
 
+  /* Título forçado em 2 linhas */
   .hero h1 {
     font-size: clamp(2.6rem, 5vw, 4.2rem);
     font-weight: 800;
     line-height: 1.08;
     letter-spacing: -0.03em;
     color: var(--text);
-    max-width: 660px;
+    max-width: 580px;
     margin-bottom: 1.5rem;
   }
+
   .hero-desc {
     font-size: 0.97rem;
     font-weight: 400;

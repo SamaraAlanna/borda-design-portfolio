@@ -71,17 +71,34 @@
     gap: 2.5rem;
     list-style: none;
   }
+
   .nav-links a {
     font-size: 0.88rem;
     font-weight: 400;
     color: var(--text-muted);
     text-decoration: none;
     transition: color 0.2s;
+    position: relative;
+    padding-bottom: 0.25rem;
   }
   .nav-links a:hover { color: var(--text); }
 
+  /* Linha rosa na seção ativa */
+  .nav-links a.active {
+    color: var(--text);
+  }
+  .nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    right: 0;
+    height: 1.5px;
+    background: var(--accent);
+    border-radius: 99px;
+  }
+
   .nav-cta {
-    position: relative;
     background: var(--accent);
     color: #1a1018;
     font-family: var(--font);
@@ -97,24 +114,6 @@
   }
   .nav-cta:hover { opacity: 0.82; }
   .nav-cta svg { width: 15px; height: 15px; flex-shrink: 0; }
-
-  /* Feixe de luz abaixo do botão vamos conversar */
-  .nav-cta::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 100px;
-    background: radial-gradient(ellipse at center top,
-      rgba(230,183,211,0.20) 0%,
-      rgba(230,183,211,0.08) 40%,
-      transparent 70%
-    );
-    pointer-events: none;
-    z-index: -1;
-  }
 
   @media (max-width: 960px) {
     .nav-links { display: none; }
@@ -137,3 +136,24 @@
     </a>
   </div>
 </nav>
+
+<script>
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
