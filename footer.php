@@ -31,11 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (href === '#') return;
     e.preventDefault();
     const target = document.querySelector(href);
-    if (target) {
-      const navHeight = document.querySelector('nav').offsetHeight;
-      const top = target.getBoundingClientRect().top + window.scrollY - navHeight;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 </script>

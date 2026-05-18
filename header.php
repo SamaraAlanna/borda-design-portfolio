@@ -21,6 +21,7 @@
   }
 
   html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  section[id] { scroll-margin-top: 64px; }
 
   body {
     background: var(--bg);
