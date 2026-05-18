@@ -25,9 +25,20 @@
 </footer>
 
 <script>
-function smoothScrollTo(target, duration) {
+function smoothScrollTo(target, duration, center) {
   var navHeight = document.querySelector('nav').offsetHeight;
-  var targetPos = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+  var viewportHeight = window.innerHeight;
+  var sectionHeight = target.offsetHeight;
+  var topPos = target.getBoundingClientRect().top + window.pageYOffset;
+  var offset;
+
+  if (center && sectionHeight < viewportHeight - navHeight) {
+    offset = (viewportHeight - navHeight - sectionHeight) / 2 + navHeight;
+  } else {
+    offset = navHeight;
+  }
+
+  var targetPos = topPos - offset;
   var startPos = window.pageYOffset;
   var distance = targetPos - startPos;
   var startTime = null;
@@ -53,7 +64,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     var target = document.querySelector(href);
     if (!target) return;
     e.preventDefault();
-    smoothScrollTo(target, 700);
+    smoothScrollTo(target, 700, href === '#servicos');
   });
 });
 </script>
