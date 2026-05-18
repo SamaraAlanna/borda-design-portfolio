@@ -67,29 +67,25 @@
     50%       { opacity: 0.35; transform: scale(0.65); }
   }
 
-  /* Título em 2 linhas */
+  /* Título em 2 linhas — largura controlada para quebrar naturalmente em 2 */
   .hero h1 {
-    font-size: clamp(2.8rem, 4.2vw, 3.8rem);
+    font-size: clamp(2.4rem, 3.8vw, 3.5rem);
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.03em;
     color: var(--text);
-    max-width: 820px;
+    max-width: 680px;
     margin-bottom: 1.5rem;
-    white-space: nowrap;
   }
 
-  /* Descrição em 2 linhas */
+  /* Descrição em 2 linhas — largura controlada */
   .hero-desc {
     font-size: 0.97rem;
     font-weight: 400;
     color: var(--text-muted);
-    max-width: 820px;
+    max-width: 580px;
     line-height: 1.75;
     margin-bottom: 2.5rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .hero-actions {
@@ -126,8 +122,8 @@
 <div class="hero-wrap">
   <section class="hero">
     <div class="hero-badge">Disponível para projetos</div>
-    <h1>Ter um site profissional é mais simples do que parece.</h1>
-    <p class="hero-desc">Sou a Samara Alanna, designer e desenvolvedora. Você me conta o que precisa e eu crio seu site — cuidando do visual, da experiência e de tudo que envolve o funcionamento.</p>
+    <h1>Ter um site profissional é<br>mais simples do que parece.</h1>
+    <p class="hero-desc">Sou a Samara Alanna, designer e desenvolvedora.<br>Você me conta o que precisa e eu crio seu site — cuidando do visual, da experiência e de tudo que envolve o funcionamento.</p>
     <div class="hero-actions">
       <a href="#servicos" class="btn-primary">Conhecer serviços</a>
       <a href="#projetos" class="btn-ghost">Ver projetos</a>
