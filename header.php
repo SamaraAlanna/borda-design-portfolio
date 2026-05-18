@@ -20,7 +20,7 @@
     --max-width:     1200px;
   }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 
   body {
     background: var(--bg);
@@ -140,19 +140,6 @@
 <script>
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.nav-links a');
-  const navEl = document.querySelector('nav');
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', e => {
-      const href = link.getAttribute('href');
-      if (!href || !href.startsWith('#')) return;
-      const target = document.querySelector(href);
-      if (!target) return;
-      e.preventDefault();
-      const offset = target.getBoundingClientRect().top + window.scrollY - navEl.offsetHeight;
-      window.scrollTo({ top: offset, behavior: 'smooth' });
-    });
-  });
 
   window.addEventListener('scroll', () => {
     let current = '';
