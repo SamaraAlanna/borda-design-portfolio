@@ -42,7 +42,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background: rgba(255,255,255,0.04);
+    background: rgba(230,183,211,0.12);
     border: 0.5px solid rgba(255,255,255,0.12);
     border-radius: 99px;
     padding: 0.38rem 1rem;
