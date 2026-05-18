@@ -3,6 +3,14 @@
   .servicos-header { margin-bottom: 3rem; }
   .servicos-header p { font-size: 0.95rem; color: var(--text-muted); max-width: 440px; line-height: 1.7; margin-top: 0.75rem; }
   .servicos-carousel-wrapper { position: relative; }
+  #srv-prev, #srv-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  #srv-prev { left: -56px; }
+  #srv-next { right: -56px; }
   .servicos-grid {
     display: flex;
     gap: 1px;
@@ -22,9 +30,6 @@
     background: var(--bg2); padding: 2rem;
     display: flex; flex-direction: column; gap: 1.1rem;
     transition: background 0.25s, box-shadow 0.25s; position: relative; overflow: hidden;
-  }
-  .carousel-nav {
-    display: flex; justify-content: flex-end; gap: 0.5rem; margin-top: 1.25rem;
   }
   .carousel-btn {
     background: var(--accent-dim); border: 1px solid var(--accent-border); border-radius: 99px;
@@ -100,6 +105,8 @@
       <p>Cada projeto é feito do zero, com atenção ao visual, à experiência e ao que realmente importa para o seu cliente.</p>
     </div>
     <div class="servicos-carousel-wrapper">
+      <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
+      <button class="carousel-btn" id="srv-next" aria-label="Próximo">&#8594;</button>
     <div class="servicos-grid">
 
       <div class="servico-card">
@@ -172,10 +179,6 @@
         </div>
       </div>
 
-    </div>
-    <div class="carousel-nav">
-      <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
-      <button class="carousel-btn" id="srv-next" aria-label="Próximo">&#8594;</button>
     </div>
     </div>
   </div>
