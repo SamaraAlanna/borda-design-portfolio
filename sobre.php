@@ -177,12 +177,12 @@
 
   .area-tags {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: hidden;
     gap: 0.35rem;
     padding-top: 0.85rem;
     border-top: 0.5px solid var(--border);
     margin-top: 1.5rem;
-    min-height: 60px;
   }
 
   .tag {
