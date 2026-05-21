@@ -13,7 +13,7 @@
   .faq-group:last-child { margin-bottom: 0; }
 
   .faq-group-label {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     font-weight: 500;
     color: var(--text-muted);
     letter-spacing: 0.1em;

@@ -1,6 +1,6 @@
 <style>
   .section-label {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     font-weight: 500;
     color: var(--accent);
     letter-spacing: 0.12em;
