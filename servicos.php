@@ -303,18 +303,20 @@
 
   #srv-prev {
     position: absolute;
-    left: -60px;
+    left: -56px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
+    flex-shrink: 0;
   }
 
   #srv-next {
     position: absolute;
-    right: -60px;
+    right: -56px;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
+    flex-shrink: 0;
   }
 
   .carousel-btn {
@@ -337,7 +339,7 @@
   .carousel-btn:hover { background: var(--accent); color: #1a1018; box-shadow: 0 4px 16px rgba(230,183,211,0.32); }
 
   @media (max-width: 960px) { .servico-card { flex: 0 0 calc(50% - 1px); } }
-  @media (max-width: 600px) { .servico-card { flex: 0 0 88%; } }
+  @media (max-width: 600px) { .servico-card { flex: 0 0 100%; } }
 </style>
 
 <section class="servicos" id="servicos">
