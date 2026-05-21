@@ -79,12 +79,10 @@ function smoothScrollTo(target, duration, center) {
     /* Scroll reveal */
     '.reveal{opacity:0;transform:translateY(36px) scale(.97);filter:blur(5px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1),filter .75s cubic-bezier(.16,1,.3,1)}' +
     '.reveal.in-view{opacity:1;transform:none;filter:none}' +
-    /* Clip-path reveal for headings */
-    '.clip-h{clip-path:inset(0 0 110% 0);transition:clip-path .85s cubic-bezier(.16,1,.3,1)}' +
-    '.clip-h.in-view{clip-path:inset(0 0 0% 0)}' +
-    /* Cursor-tracked glow */
+    /* Cursor-tracked glow: pseudo-elements cobrindo o card inteiro */
     '.area-card,.project-card,.servico-card,.step{--gx:50%;--gy:50%}' +
-    '.area-card::before,.servico-card::before{background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.22) 0%,transparent 62%)!important}' +
+    '.area-card::before{top:0!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;height:100%!important;background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.2) 0%,transparent 65%)!important}' +
+    '.servico-card::before{top:0!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;height:100%!important;background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.2) 0%,transparent 65%)!important}' +
     '.project-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.12) 0%,transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none;z-index:0}' +
     '.project-card:hover::before{opacity:1}';
   document.head.appendChild(s);
@@ -124,15 +122,11 @@ function smoothScrollTo(target, duration, center) {
     prog.style.transform = 'scaleX(' + pct + ')';
   }, { passive: true });
 
-  /* ── Reveal: labels, textos, ações ── */
-  ['.section-label', '.btn-cv', '.sobre-text p', '.servicos-header p',
+  /* ── Reveal: títulos, labels, textos, ações ── */
+  ['.section-label', '.section-title', '.processo h2', '.cta h2',
+   '.btn-cv', '.sobre-text p', '.servicos-header p',
    '.section-header > a', '.cta-eyebrow', '.cta p', '.cta-actions'].forEach(function (sel) {
     document.querySelectorAll(sel).forEach(function (el) { el.classList.add('reveal'); });
-  });
-
-  /* ── Clip-path para títulos grandes ── */
-  document.querySelectorAll('.section-title, .processo h2, .cta h2').forEach(function (el) {
-    el.classList.add('clip-h');
   });
 
   /* ── Cards escalonados ── */
@@ -148,7 +142,7 @@ function smoothScrollTo(target, duration, center) {
       if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); }
     });
   }, { threshold: 0.07, rootMargin: '0px 0px -20px 0px' });
-  document.querySelectorAll('.reveal, .clip-h').forEach(function (el) { obs.observe(el); });
+  document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
 
   /* ── 3D tilt em cards ── */
   document.querySelectorAll('.area-card, .project-card').forEach(function (card) {
@@ -174,27 +168,6 @@ function smoothScrollTo(target, duration, center) {
     });
   });
 
-  /* ── Counter animado nos preços ── */
-  document.querySelectorAll('.servico-price').forEach(function (el) {
-    var orig = el.textContent.trim();
-    var num  = parseInt(orig.replace(/\D/g, ''), 10);
-    var done = false;
-    var po = new IntersectionObserver(function (entries) {
-      if (entries[0].isIntersecting && !done) {
-        done = true; po.disconnect();
-        var t0 = null, dur = 900;
-        (function tick(t) {
-          if (!t0) t0 = t;
-          var p = Math.min((t - t0) / dur, 1);
-          var e = 1 - Math.pow(1 - p, 3);
-          el.textContent = 'R$' + Math.round(e * num).toLocaleString('pt-BR');
-          if (p < 1) requestAnimationFrame(tick);
-          else el.textContent = orig;
-        })(performance.now());
-      }
-    }, { threshold: 0.5 });
-    po.observe(el);
-  });
 
 })();
 
