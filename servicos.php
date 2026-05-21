@@ -49,12 +49,11 @@
     background: var(--border);
     border: 0.5px solid var(--border);
     border-radius: var(--radius);
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    overscroll-behavior-x: contain;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: auto;
+    touch-action: pan-x;
   }
   .servicos-grid::-webkit-scrollbar { display: none; }
 
