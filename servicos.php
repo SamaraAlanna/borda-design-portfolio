@@ -54,6 +54,7 @@
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
+    overscroll-behavior-x: contain;
   }
   .servicos-grid::-webkit-scrollbar { display: none; }
 
@@ -67,6 +68,7 @@
     min-height: 520px;
     position: relative;
     overflow: hidden;
+    -webkit-overflow-scrolling: auto;
     transition: background 0.25s;
   }
   .servico-card:hover { background: var(--bg3); }
