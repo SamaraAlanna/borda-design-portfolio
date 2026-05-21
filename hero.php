@@ -106,9 +106,23 @@
     padding: 0.85rem 2rem;
     border-radius: 99px;
     text-decoration: none;
-    transition: opacity 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s;
   }
-  .btn-primary:hover { opacity: 0.85; transform: translateY(-1px); }
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+    transform: skewX(-15deg) translateX(-150%);
+    pointer-events: none;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(230,183,211,0.38); }
+  .btn-primary:hover::before { animation: btnShimmer 0.55s cubic-bezier(.4,0,.2,1) forwards; }
+
   .btn-ghost {
     color: var(--text-muted);
     font-family: var(--font);
@@ -118,9 +132,23 @@
     border: 0.5px solid rgba(255,255,255,0.12);
     padding: 0.85rem 1.75rem;
     border-radius: 99px;
-    transition: color 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    transition: color 0.35s cubic-bezier(.16,1,.3,1), border-color 0.35s, transform 0.25s cubic-bezier(.16,1,.3,1);
   }
-  .btn-ghost:hover { color: var(--text); border-color: rgba(230,183,211,0.3); }
+  .btn-ghost::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(230,183,211,0.1);
+    border-radius: inherit;
+    transform: translateX(-101%);
+    transition: transform 0.4s cubic-bezier(.16,1,.3,1);
+    pointer-events: none;
+  }
+  .btn-ghost:hover { color: var(--accent); border-color: rgba(230,183,211,0.4); transform: translateY(-2px); }
+  .btn-ghost:hover::before { transform: translateX(0); }
 </style>
 
 <div class="hero-wrap">

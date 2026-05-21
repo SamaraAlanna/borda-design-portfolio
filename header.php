@@ -113,10 +113,28 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transition: opacity 0.2s;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s;
   }
-  .nav-cta:hover { opacity: 0.82; }
+  .nav-cta::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+    transform: skewX(-15deg) translateX(-150%);
+    pointer-events: none;
+  }
+  .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(230,183,211,0.38); }
+  .nav-cta:hover::before { animation: btnShimmer 0.55s cubic-bezier(.4,0,.2,1) forwards; }
   .nav-cta svg { width: 15px; height: 15px; flex-shrink: 0; }
+
+  @keyframes btnShimmer {
+    from { transform: skewX(-15deg) translateX(-150%); }
+    to   { transform: skewX(-15deg) translateX(280%); }
+  }
 
   @media (max-width: 960px) {
     .nav-links { display: none; }

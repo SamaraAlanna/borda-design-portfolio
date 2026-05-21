@@ -64,12 +64,22 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    transition: opacity 0.2s, transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s;
   }
-  .btn-cta:hover {
-    opacity: 0.85;
-    transform: translateY(-1px);
+  .btn-cta::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
+    transform: skewX(-15deg) translateX(-150%);
+    pointer-events: none;
   }
+  .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(230,183,211,0.4); }
+  .btn-cta:hover::before { animation: btnShimmer 0.55s cubic-bezier(.4,0,.2,1) forwards; }
   .btn-cta svg {
     width: 16px;
     height: 16px;
