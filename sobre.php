@@ -233,7 +233,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
         <h4>UX Design</h4>
-        <p>Quem nunca entrou em um site e teve dificuldade para encontrar algo simples ou desistiu pela lentidão? UX Design é justamente o que torna a experiência mais intuitiva, organizada e agradável para quem está navegando.</p>
+        <p>Quem nunca entrou em um site e teve dificuldade para encontrar o que queria? UX Design é o que torna a experiência mais intuitiva, organizada e agradável para quem navega.</p>
         <div class="area-tags">
           <span class="tag">Pesquisa</span>
           <span class="tag">Fluxos</span>
@@ -246,7 +246,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
         </div>
         <h4>UI Design</h4>
-        <p>UI Design é a parte visual da experiência. Um site bonito, organizado e bem construído muda completamente a forma como sua marca é percebida e valorizada pelo público.</p>
+        <p>UI Design é a parte visual da experiência. Um site bonito, bem construído e organizado muda completamente como sua marca é percebida e valorizada pelo público.</p>
         <div class="area-tags">
           <span class="tag">Figma</span>
           <span class="tag">Design System</span>
@@ -259,7 +259,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
         <h4>Web Design</h4>
-        <p>Web Design é a junção de UX/UI Design + Desenvolvimento Web, criando experiências digitais completas e funcionais.</p>
+        <p>Web Design une UX/UI e desenvolvimento web para criar experiências digitais completas. Do layout ao código, tudo pensado para funcionar bem em qualquer dispositivo.</p>
         <div class="area-tags">
           <span class="tag">Desenvolvimento</span>
           <span class="tag">UI/UX</span>
@@ -273,7 +273,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
         <h4>Desenvolvimento Full Stack</h4>
-        <p>Você provavelmente já viu aquelas telas cheias de códigos coloridos e associou isso à programação. O desenvolvimento web é justamente o que transforma o design em um site real e funcional. Trabalho utilizando boas práticas para criar sites leves, rápidos, organizados e acessíveis para todos os usuários.</p>
+        <p>Transformo design em sites reais e funcionais. Utilizo boas práticas para entregar projetos leves, rápidos, acessíveis e fiéis ao que foi projetado no Figma.</p>
         <div class="area-tags">
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
