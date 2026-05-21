@@ -45,7 +45,8 @@
     padding: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between;
+    min-height: 480px;
     position: relative;
     overflow: hidden;
     transition: background 0.25s;
@@ -265,6 +266,7 @@
     color: var(--accent);
     width: 44px;
     height: 44px;
+    min-width: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,9 +274,9 @@
     font-size: 1.1rem;
     flex-shrink: 0;
     align-self: center;
-    transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.25s;
+    transition: background 0.25s, color 0.25s, box-shadow 0.25s;
   }
-  .carousel-btn:hover { background: var(--accent); color: #1a1018; transform: scale(1.1); box-shadow: 0 4px 16px rgba(230,183,211,0.32); }
+  .carousel-btn:hover { background: var(--accent); color: #1a1018; box-shadow: 0 4px 16px rgba(230,183,211,0.32); }
 
   @media (max-width: 960px) { .servico-card { flex: 0 0 calc(50% - 1px); } }
   @media (max-width: 600px) { .servico-card { flex: 0 0 88%; } }
@@ -343,52 +345,6 @@
           </div>
         </div>
 
-        <!-- LANDING PAGE -->
-        <div class="servico-card">
-          <div class="servico-card-top">
-            <div class="servico-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-          </div>
-          <h3>Landing Page</h3>
-          <p>Página focada em converter visitantes em clientes. Design estratégico e código otimizado.</p>
-          <div class="card-acc">
-            <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
-              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="card-acc-body">
-              <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Design exclusivo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Desenvolvimento completo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>1 página · 1 rodada de ajustes</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-acc">
-            <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
-              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="card-acc-body">
-              <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Empresas · Lançamentos</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Produtos digitais</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Profissionais autônomos</div>
-              </div>
-            </div>
-          </div>
-          <div class="servico-footer">
-            <div>
-              <div class="servico-price-label">A partir de</div>
-              <div class="servico-price">R$1.200</div>
-              <div class="servico-prazo">Prazo: <strong>15 a 20 dias úteis</strong></div>
-            </div>
-            <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
-          </div>
-        </div>
-
         <!-- SITE ACESSÍVEL -->
         <div class="servico-card">
           <div class="servico-card-top">
@@ -431,6 +387,52 @@
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$800</div>
               <div class="servico-prazo">Prazo: <strong>7 a 10 dias úteis</strong></div>
+            </div>
+            <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
+          </div>
+        </div>
+
+        <!-- LANDING PAGE -->
+        <div class="servico-card">
+          <div class="servico-card-top">
+            <div class="servico-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+          </div>
+          <h3>Landing Page</h3>
+          <p>Página focada em converter visitantes em clientes. Design estratégico e código otimizado.</p>
+          <div class="card-acc">
+            <button class="card-acc-trigger" onclick="toggleCard(this)">
+              <span class="card-acc-label">O que está incluso</span>
+              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="card-acc-body">
+              <div class="card-acc-inner">
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Design exclusivo</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Desenvolvimento completo</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>1 página · 1 rodada de ajustes</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-acc">
+            <button class="card-acc-trigger" onclick="toggleCard(this)">
+              <span class="card-acc-label">Recomendado para</span>
+              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="card-acc-body">
+              <div class="card-acc-inner">
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Empresas · Lançamentos</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Produtos digitais</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Profissionais autônomos</div>
+              </div>
+            </div>
+          </div>
+          <div class="servico-footer">
+            <div>
+              <div class="servico-price-label">A partir de</div>
+              <div class="servico-price">R$1.200</div>
+              <div class="servico-prazo">Prazo: <strong>15 a 20 dias úteis</strong></div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
