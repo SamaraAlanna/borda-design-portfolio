@@ -72,8 +72,10 @@
   .btn-cta::before {
     content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 50%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
     transform: skewX(-15deg) translateX(-150%);
     pointer-events: none;

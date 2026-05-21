@@ -58,20 +58,22 @@
     margin-bottom: 2.5rem;
     width: fit-content;
   }
+
   .hero-badge::before {
     content: '';
-    width: 6px; height: 6px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: var(--accent);
     flex-shrink: 0;
     animation: pulse 2.5s infinite;
   }
+
   @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50%       { opacity: 0.35; transform: scale(0.65); }
   }
 
-  /* Título em 2 linhas — largura controlada para quebrar naturalmente em 2 */
   .hero h1 {
     font-size: clamp(2.4rem, 3.8vw, 3.5rem);
     font-weight: 800;
@@ -82,7 +84,6 @@
     margin-bottom: 1.5rem;
   }
 
-  /* Descrição em 2 linhas — largura controlada */
   .hero-desc {
     font-size: 0.97rem;
     font-weight: 400;
@@ -97,6 +98,7 @@
     align-items: center;
     gap: 1rem;
   }
+
   .btn-primary {
     background: var(--accent);
     color: #1a1018;
@@ -111,16 +113,20 @@
     transform: translateZ(0);
     transition: transform 0.25s cubic-bezier(.16,1,.3,1), box-shadow 0.25s;
   }
+
   .btn-primary::before {
     content: '';
     position: absolute;
-    top: 0; left: 0;
-    width: 50%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.22), transparent);
     transform: skewX(-15deg) translateX(-150%);
     pointer-events: none;
   }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(230,183,211,0.38); }
+
+  .btn-primary:hover        { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(230,183,211,0.38); }
   .btn-primary:hover::before { animation: btnShimmer 0.55s cubic-bezier(.4,0,.2,1) forwards; }
 
   .btn-ghost {
@@ -135,8 +141,10 @@
     position: relative;
     overflow: hidden;
     transform: translateZ(0);
-    transition: color 0.35s cubic-bezier(.16,1,.3,1), border-color 0.35s, transform 0.25s cubic-bezier(.16,1,.3,1);
+    transition: color 0.35s cubic-bezier(.16,1,.3,1), border-color 0.35s,
+                transform 0.25s cubic-bezier(.16,1,.3,1);
   }
+
   .btn-ghost::before {
     content: '';
     position: absolute;
@@ -147,7 +155,8 @@
     transition: transform 0.4s cubic-bezier(.16,1,.3,1);
     pointer-events: none;
   }
-  .btn-ghost:hover { color: var(--accent); border-color: rgba(230,183,211,0.4); transform: translateY(-2px); }
+
+  .btn-ghost:hover        { color: var(--accent); border-color: rgba(230,183,211,0.4); transform: translateY(-2px); }
   .btn-ghost:hover::before { transform: translateX(0); }
 </style>
 
