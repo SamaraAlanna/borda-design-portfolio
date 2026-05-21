@@ -341,7 +341,10 @@
   }
   .carousel-btn:hover { background: var(--accent); color: #1a1018; box-shadow: 0 4px 16px rgba(230,183,211,0.32); }
 
-  @media (max-width: 960px) { .servico-card { flex: 0 0 calc(50% - 1px); } }
+  @media (max-width: 960px) {
+    .servico-card { flex: 0 0 calc(50% - 1px); }
+    .servicos-header > div { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  }
   @media (max-width: 600px) { .servico-card { flex: 0 0 100%; } }
 </style>
 

@@ -204,6 +204,7 @@
 
   @media (max-width: 960px) {
     .areas-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: auto; }
+    .sobre-title-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
   }
   @media (max-width: 600px) {
     .areas-grid { grid-template-columns: 1fr; }
