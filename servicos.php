@@ -355,6 +355,54 @@
       <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
       <div class="servicos-grid">
 
+        <!-- SUPORTE MENSAL -->
+        <div class="servico-card">
+          <div class="servico-card-top">
+            <div class="servico-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <span class="servico-badge-blue">Recomendado</span>
+          </div>
+          <h3>Suporte Mensal</h3>
+          <p>Mantenha seu site sempre atualizado e funcionando. Atualizações, ajustes e correções sem preocupação.</p>
+          <div class="card-acc">
+            <button class="card-acc-trigger" onclick="toggleCard(this)">
+              <span class="card-acc-label">O que está incluso</span>
+              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="card-acc-body">
+              <div class="card-acc-inner">
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Atualizações de texto e imagens</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Pequenos ajustes de layout</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Correção de bugs</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Atualizações <span class="rosa">ilimitadas</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
+              </div>
+            </div>
+          </div>
+          <div class="card-acc">
+            <button class="card-acc-trigger" onclick="toggleCard(this)">
+              <span class="card-acc-label">Recomendado para</span>
+              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="card-acc-body">
+              <div class="card-acc-inner">
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Clientes com site já entregue</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Quem quer manter o site sempre atualizado</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Negócios em crescimento</div>
+              </div>
+            </div>
+          </div>
+          <div class="servico-footer">
+            <div>
+              <div class="servico-price-label">Mensalidade</div>
+              <div class="servico-price">R$400</div>
+              <div class="servico-prazo">Contrato mensal renovável</div>
+            </div>
+            <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
+          </div>
+        </div>
+
         <!-- SITE PERSONALIZADO -->
         <div class="servico-card">
           <div class="servico-card-top">
@@ -400,54 +448,6 @@
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$6.000</div>
               <div class="servico-prazo">Prazo: 30–60 dias úteis</div>
-            </div>
-            <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
-          </div>
-        </div>
-
-        <!-- SUPORTE MENSAL -->
-        <div class="servico-card">
-          <div class="servico-card-top">
-            <div class="servico-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <span class="servico-badge-blue">Recomendado</span>
-          </div>
-          <h3>Suporte Mensal</h3>
-          <p>Mantenha seu site sempre atualizado e funcionando. Atualizações, ajustes e correções sem preocupação.</p>
-          <div class="card-acc">
-            <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
-              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="card-acc-body">
-              <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Atualizações de texto e imagens</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Pequenos ajustes de layout</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Correção de bugs</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Atualizações <span class="rosa">ilimitadas</span></div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
-              </div>
-            </div>
-          </div>
-          <div class="card-acc">
-            <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
-              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="card-acc-body">
-              <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Clientes com site já entregue</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Quem quer manter o site sempre atualizado</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Negócios em crescimento</div>
-              </div>
-            </div>
-          </div>
-          <div class="servico-footer">
-            <div>
-              <div class="servico-price-label">Mensalidade</div>
-              <div class="servico-price">R$400</div>
-              <div class="servico-prazo">Contrato mensal renovável</div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
