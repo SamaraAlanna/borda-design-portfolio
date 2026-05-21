@@ -168,8 +168,8 @@
 
   .nav-dropdown {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 64px;
     left: 0;
     right: 0;
     background: rgba(12,12,11,0.97);
@@ -178,7 +178,7 @@
     border-bottom: 0.5px solid var(--border);
     padding: 0;
     flex-direction: column;
-    z-index: 1001;
+    z-index: 9999;
   }
   .nav-dropdown.open { display: flex; }
   .nav-dropdown a {
