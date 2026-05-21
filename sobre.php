@@ -171,6 +171,11 @@
     font-weight: 400;
     line-height: 1.65;
     flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
   }
 
   .area-tags {
@@ -192,7 +197,10 @@
     transition: border-color 0.2s, color 0.2s;
   }
 
-  .area-card:hover .tag { border-color: var(--accent-border); color: var(--accent); }
+  .area-card:hover .tag { 
+    border-color: var(--accent-border); 
+    color: var(--accent); 
+  }
 
   @media (max-width: 960px) {
     .areas-grid { grid-template-columns: repeat(2, 1fr); }
@@ -202,6 +210,7 @@
     .areas-grid { grid-template-columns: 1fr; }
     .area-card { height: auto; min-height: 0; }
   }
+
 </style>
 
 <section class="sobre" id="sobre">
