@@ -112,7 +112,7 @@
     border-radius: 99px;
     padding: 0.18rem 0.6rem;
     font-size: var(--text-xs);
-    color: var(--accent);
+    color: var(--text-dim);
     letter-spacing: 0.03em;
   }
 
