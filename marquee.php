@@ -10,9 +10,10 @@
   .marquee-track {
     display: flex;
     gap: 2.5rem;
-    animation: marquee 28s linear infinite;
+    animation: marquee 22s linear infinite;
     width: max-content;
     will-change: transform;
+    transform: translateZ(0);
   }
   .marquee-item {
     font-size: 0.72rem;

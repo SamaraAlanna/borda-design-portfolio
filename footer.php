@@ -87,11 +87,6 @@ function smoothScrollTo(target, duration, center) {
     '.project-card:hover::before{opacity:1}' +
     /* Gradient text nos labels */
     '.section-label{background:linear-gradient(90deg,var(--accent) 0%,rgba(230,183,211,.5) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}' +
-    /* Ambient CSS-driven — dois glows cruzando, sem JS RAF */
-    '.amb{position:fixed;inset:0;pointer-events:none;z-index:0;mix-blend-mode:overlay;will-change:opacity}' +
-    '.amb-a{background:radial-gradient(ellipse at 70% 28%,rgba(230,183,211,.13) 0%,transparent 55%);animation:ambPulse 18s ease-in-out infinite}' +
-    '.amb-b{background:radial-gradient(ellipse at 28% 72%,rgba(230,183,211,.1) 0%,transparent 55%);animation:ambPulse 18s ease-in-out infinite reverse;animation-delay:-9s}' +
-    '@keyframes ambPulse{0%,100%{opacity:1}50%{opacity:0}}' +
     /* FAB WhatsApp */
     '.fab-wa{position:fixed;bottom:1.75rem;right:1.75rem;z-index:1000;width:52px;height:52px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,.3);animation:fabIn .7s cubic-bezier(.16,1,.3,1) 1.5s both;transition:transform .2s,box-shadow .2s}' +
     '.fab-wa:hover{transform:translateY(-2px) scale(1.08);box-shadow:0 8px 28px rgba(37,211,102,.45)}' +
@@ -197,13 +192,6 @@ function smoothScrollTo(target, duration, center) {
   var grain = document.createElement('div');
   grain.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:9996;opacity:0.025;background:url(' + svgNoise + ') repeat;background-size:256px 256px';
   document.body.appendChild(grain);
-
-  /* ── Ambient glows CSS-driven (zero JS RAF) ── */
-  ['amb-a', 'amb-b'].forEach(function (c) {
-    var d = document.createElement('div');
-    d.className = 'amb ' + c;
-    document.body.appendChild(d);
-  });
 
   /* ── Botão flutuante WhatsApp ── */
   var fab = document.createElement('a');
