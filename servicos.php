@@ -259,6 +259,11 @@
 
   .btn-servico:hover        { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(230,183,211,0.36); }
   .btn-servico:hover::before { animation: btnShimmer 0.55s cubic-bezier(.4,0,.2,1) forwards; }
+
+  .rosa {
+    color: #e6b7d3;
+    font-weight: 700;
+  }
 </style>
 
 <section class="servicos" id="servicos">
