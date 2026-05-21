@@ -335,7 +335,7 @@
             <span class="servico-badge">Mais pedido</span>
           </div>
           <h3>Identidade Visual</h3>
-          <p>Personalidade e consistência para sua marca em todos os pontos de contato com o público.</p>
+          <p>Personalidade e consistência para sua marca em todos os pontos de contato com o público, fortalecendo seu posicionamento visual.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
@@ -432,7 +432,7 @@
             </div>
           </div>
           <h3>Landing Page</h3>
-          <p>Página focada em converter visitantes em clientes. Design estratégico e código otimizado.</p>
+          <p>Página focada em converter visitantes em clientes, com design estratégico, código otimizado e experiência pensada para resultados.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
