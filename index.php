@@ -12,6 +12,7 @@
 <?php include 'hero.php'; ?>
 <?php include 'sobre.php'; ?>
 <?php include 'projetos.php'; ?>
+<?php include 'quiz.php'; ?>
 <?php include 'servicos.php'; ?>
 <?php include 'cta.php'; ?>
 <?php include 'footer.php'; ?>

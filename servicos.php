@@ -21,6 +21,21 @@
     margin-top: 0.75rem;
   }
 
+  .btn-quiz-header {
+    background: var(--accent);
+    color: #1a1018;
+    font-family: var(--font);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.55rem 1.1rem;
+    border-radius: 99px;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: opacity 0.2s;
+  }
+  .btn-quiz-header:hover { opacity: 0.82; }
+
   .servicos-carousel-wrapper {
     position: relative;
     display: flex;
@@ -318,7 +333,10 @@
   <div class="container">
     <div class="servicos-header">
       <div class="section-label">Serviços</div>
-      <h2 class="section-title">O que posso fazer pelo seu negócio</h2>
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-bottom:0.75rem;">
+        <h2 class="section-title">O que posso fazer pelo seu negócio</h2>
+        <a href="#quiz" class="btn-quiz-header">Não sei qual serviço escolher</a>
+      </div>
       <p>Cada projeto é desenvolvido de forma personalizada, pensando no visual, na experiência e no que realmente faz sentido para o seu negócio.</p>
     </div>
 
