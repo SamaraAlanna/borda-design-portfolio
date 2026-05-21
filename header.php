@@ -1,4 +1,10 @@
 <style>
+  @media (hover: none) and (pointer: coarse) {
+    * { cursor: auto !important; }
+    *::before { cursor: auto !important; }
+    *::after { cursor: auto !important; }
+  }
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
