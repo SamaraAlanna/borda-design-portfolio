@@ -385,7 +385,7 @@
             </div>
           </div>
           <h3>Site Acessível</h3>
-          <p>Site profissional em plataforma visual. Qualidade sem precisar de um grande investimento.</p>
+          <p>Site profissional desenvolvido em plataforma visual, com design personalizado e qualidade sem grande investimento.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
@@ -478,7 +478,7 @@
             </div>
           </div>
           <h3>Loja Virtual</h3>
-          <p>E-commerce completo para vender online com credibilidade, design estratégico e experiência pensada para converter.</p>
+          <p>E-commerce completo para vender online com design estratégico, experiência de compra fluida e credibilidade.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
@@ -526,7 +526,7 @@
             </div>
           </div>
           <h3>Site Personalizado</h3>
-          <p>Solução completa sob medida para o seu negócio. Desenvolvido do zero de forma estratégica e escalável.</p>
+          <p>Solução completa sob medida para o seu negócio, desenvolvida do zero com foco em estratégia e escalabilidade.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
