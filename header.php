@@ -197,6 +197,10 @@
     .nav-menu-btn { display: flex; }
     .nav-cta { display: none; }
   }
+
+  @media (max-width: 960px) {
+    * { cursor: default !important; }
+  }
 </style>
 
 <nav>
