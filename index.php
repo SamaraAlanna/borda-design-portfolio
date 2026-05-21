@@ -14,6 +14,7 @@
 <?php include 'projetos.php'; ?>
 <?php include 'quiz.php'; ?>
 <?php include 'servicos.php'; ?>
+<?php include 'faq.php'; ?>
 <?php include 'cta.php'; ?>
 <?php include 'footer.php'; ?>
 
