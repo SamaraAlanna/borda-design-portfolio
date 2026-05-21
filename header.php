@@ -97,7 +97,7 @@
     opacity: 0;
     transition: opacity 0.4s ease;
   }
-  .nav-links a:hover { color: var(--text); }
+  .nav-links a:hover { color: var(--accent); }
   .nav-links a.active { color: var(--text); }
   .nav-links a.active::after { opacity: 1; }
 
