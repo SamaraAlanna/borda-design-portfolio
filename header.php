@@ -207,6 +207,12 @@
       cursor: default !important;
     }
   }
+
+  @media (hover: none) and (pointer: coarse) {
+    * {
+      cursor: auto !important;
+    }
+  }
 </style>
 
 <nav>
