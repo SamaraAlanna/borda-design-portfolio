@@ -17,13 +17,13 @@
 
   .servicos-carousel-wrapper {
     position: relative;
+    display: flex;
+    align-items: center;
   }
 
   #srv-prev,
   #srv-next {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 2;
   }
 
@@ -348,12 +348,7 @@
           <div class="include-item"><div class="include-dot"></div>Design exclusivo</div>
           <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
           <div class="include-item"><div class="include-dot"></div>Responsivo</div>
-          <div class="include-item"><div class="include-dot"></div>Página de produtos</div>
-          <div class="include-item"><div class="include-dot"></div>Carrinho de compras</div>
-          <div class="include-item"><div class="include-dot"></div>Checkout integrado</div>
-          <div class="include-item"><div class="include-dot"></div>Integração com meios de pagamento</div>
-          <div class="include-item"><div class="include-dot"></div>Área de gerenciamento de pedidos</div>
-          <div class="include-item"><div class="include-dot"></div>Cadastro de produtos e categorias</div>
+          <div class="include-item"><div class="include-dot"></div>Loja completa com carrinho, checkout e pagamentos</div>
           <div class="include-item"><div class="include-dot"></div>Integrações com WhatsApp e redes sociais</div>
           <div class="include-item"><div class="include-dot"></div>SEO básico</div>
           <div class="include-item"><div class="include-dot"></div>Páginas <span class="rosa">ilimitadas</span></div>
