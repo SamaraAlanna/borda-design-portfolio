@@ -158,7 +158,7 @@
     border-radius: 99px;
     padding: 0.18rem 0.6rem;
     font-size: var(--text-xs);
-    color: var(--text-dim);
+    color: var(--text-muted);
     letter-spacing: 0.03em;
     transition: border-color 0.2s, color 0.2s;
   }
