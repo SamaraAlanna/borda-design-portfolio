@@ -295,7 +295,7 @@
           <div class="include-item"><div class="include-dot"></div>Mockup de aplicação</div>
           <div class="include-item"><div class="include-dot"></div>Manual de marca</div>
           <div class="include-item"><div class="include-dot"></div>Arquivos em AI, PDF e PNG</div>
-          <div class="include-item"><div class="include-dot"></div>Ajustes e revisões ilimitadas</div>
+          <div class="include-item"><div class="include-dot"></div>Ajustes e revisões <span class="rosa">ilimitadas</span></div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
           <div class="include-item"><div class="include-dot"></div>Marcas</div>
           <div class="include-item"><div class="include-dot"></div>Empresas</div>
@@ -315,19 +315,21 @@
       <div class="servico-card destaque">
         <div class="servico-icon">◈</div>
         <h3>Landing Page</h3>
-        <p>Página focada em converter visitantes em clientes. Design estratégico e código otimizado.</p>
+        <p>Landing Page é uma página criada com foco em apresentar seu produto, serviço ou negócio de forma clara, estratégica e profissional — como esta página que você está navegando agora.</p>
         <div class="servico-includes">
           <div class="servico-includes-label">O que está incluso</div>
-          <div class="include-item"><div class="include-dot"></div>Design exclusivo no Figma</div>
+          <div class="include-item"><div class="include-dot"></div>Foco em Experiência do usuário e Design de Interface</div>
+          <div class="include-item"><div class="include-dot"></div>Design exclusivo</div>
+          <div class="include-item"><div class="include-dot"></div>Desenvolvimento inicia após a aprovação do layout do site.</div>
           <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
-          <div class="include-item"><div class="include-dot"></div>Responsivo para mobile e desktop</div>
-          <div class="include-item"><div class="include-dot"></div>Formulário de contato integrado</div>
-          <div class="include-item"><div class="include-dot"></div>1 rodada de ajustes inclusa</div>
+          <div class="include-item"><div class="include-dot"></div>Responsivo para celular e computador</div>
+          <div class="include-item"><div class="include-dot"></div>1 Página</div>
+          <div class="include-item"><div class="include-dot"></div>1 rodada de ajuste inclusa</div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
-          <div class="include-item"><div class="include-dot"></div>Marcas</div>
           <div class="include-item"><div class="include-dot"></div>Empresas</div>
+          <div class="include-item"><div class="include-dot"></div>Lançamentos</div>
+          <div class="include-item"><div class="include-dot"></div>Produtos digitais</div>
           <div class="include-item"><div class="include-dot"></div>Profissionais autônomos</div>
-          <div class="include-item"><div class="include-dot"></div>Marcas pessoais</div>
         </div>
         <div class="servico-footer">
           <div>
@@ -342,7 +344,7 @@
       <div class="servico-card">
         <div class="servico-icon">◉</div>
         <h3>Site Personalizado</h3>
-        <p>Site completo com múltiplas páginas, design exclusivo e focado na sua necessidade específica.</p>
+        <p>Um site completo, desenvolvido sob medida para o seu negócio, pensado para atender suas necessidades de forma estratégica, profissional e escalável.</p>
         <div class="servico-includes">
           <div class="servico-includes-label">O que está incluso</div>
           <div class="include-item"><div class="include-dot"></div>Até 5 páginas personalizadas</div>
