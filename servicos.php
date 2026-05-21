@@ -457,7 +457,7 @@
             </div>
           </div>
           <h3>Loja Virtual</h3>
-          <p>E-commerce completo para vender online com credibilidade e praticidade.</p>
+          <p>E-commerce completo para vender online com credibilidade, design estratégico e experiência pensada para converter.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label">O que está incluso</span>
