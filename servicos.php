@@ -395,6 +395,55 @@
           </div>
         </div>
 
+        <!-- SITE PERSONALIZADO -->
+        <div class="servico-card">
+          <div class="servico-card-top">
+            <div class="servico-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span class="servico-badge">Mais pedido</span>
+          </div>
+          <h3>Site Personalizado</h3>
+          <p>Solução completa sob medida para o seu negócio, desenvolvida do zero com foco em estratégia e escalabilidade.</p>
+          <div class="card-acc">
+            <button class="card-acc-trigger" onclick="toggleCard(this)">
+              <span class="card-acc-label">O que está incluso</span>
+              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="card-acc-body">
+              <div class="card-acc-inner">
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Design exclusivo</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Desenvolvimento completo</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo + SEO básico</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Integrações com WhatsApp e redes sociais</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Páginas + revisões <span class="rosa">ilimitadas</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-acc">
+            <button class="card-acc-trigger" onclick="toggleCard(this)">
+              <span class="card-acc-label">Recomendado para</span>
+              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="card-acc-body">
+              <div class="card-acc-inner">
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Empresas</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Profissionais autônomos</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas pessoais</div>
+              </div>
+            </div>
+          </div>
+          <div class="servico-footer">
+            <div>
+              <div class="servico-price-label">A partir de</div>
+              <div class="servico-price">R$6.000</div>
+              <div class="servico-prazo">Prazo: 30–60 dias úteis</div>
+            </div>
+            <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
+          </div>
+        </div>
+
         <!-- SITE ACESSÍVEL -->
         <div class="servico-card">
           <div class="servico-card-top">
@@ -531,54 +580,6 @@
               <div class="servico-price-label">A partir de</div>
               <div class="servico-price">R$4.000</div>
               <div class="servico-prazo">Prazo: 30–45 dias úteis</div>
-            </div>
-            <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
-          </div>
-        </div>
-
-        <!-- SITE PERSONALIZADO -->
-        <div class="servico-card">
-          <div class="servico-card-top">
-            <div class="servico-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-          </div>
-          <h3>Site Personalizado</h3>
-          <p>Solução completa sob medida para o seu negócio, desenvolvida do zero com foco em estratégia e escalabilidade.</p>
-          <div class="card-acc">
-            <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
-              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="card-acc-body">
-              <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Design exclusivo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Desenvolvimento completo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo + SEO básico</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Integrações com WhatsApp e redes sociais</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Páginas + revisões <span class="rosa">ilimitadas</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="card-acc">
-            <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
-              <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-            </button>
-            <div class="card-acc-body">
-              <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Empresas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Profissionais autônomos</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas pessoais</div>
-              </div>
-            </div>
-          </div>
-          <div class="servico-footer">
-            <div>
-              <div class="servico-price-label">A partir de</div>
-              <div class="servico-price">R$6.000</div>
-              <div class="servico-prazo">Prazo: 30–60 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
