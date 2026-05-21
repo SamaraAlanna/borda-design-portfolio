@@ -318,11 +318,9 @@
         <p>Landing Page é uma página criada com foco em apresentar seu produto, serviço ou negócio de forma clara, estratégica e profissional — como esta página que você está navegando agora.</p>
         <div class="servico-includes">
           <div class="servico-includes-label">O que está incluso</div>
-          <div class="include-item"><div class="include-dot"></div>Foco em Experiência do usuário e Design de Interface</div>
           <div class="include-item"><div class="include-dot"></div>Design exclusivo</div>
-          <div class="include-item"><div class="include-dot"></div>Desenvolvimento inicia após a aprovação do layout do site.</div>
           <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
-          <div class="include-item"><div class="include-dot"></div>Responsivo para celular e computador</div>
+          <div class="include-item"><div class="include-dot"></div>Responsivo</div>
           <div class="include-item"><div class="include-dot"></div>1 Página</div>
           <div class="include-item"><div class="include-dot"></div>1 rodada de ajuste inclusa</div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
@@ -347,19 +345,17 @@
         <p>Uma Loja virtual ou E-commerce desenvolvido para oferecer uma experiência de compra simples, organizada e profissional, ajudando sua marca a vender online com mais credibilidade e praticidade.</p>
         <div class="servico-includes">
           <div class="servico-includes-label">O que está incluso</div>
-          <div class="include-item"><div class="include-dot"></div>Foco em Experiência do usuário e Design de Interface</div>
           <div class="include-item"><div class="include-dot"></div>Design exclusivo</div>
-          <div class="include-item"><div class="include-dot"></div>Desenvolvimento inicia após a aprovação do layout do site.</div>
           <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
-          <div class="include-item"><div class="include-dot"></div>Responsivo para celular e computador</div>
+          <div class="include-item"><div class="include-dot"></div>Responsivo</div>
           <div class="include-item"><div class="include-dot"></div>Página de produtos</div>
           <div class="include-item"><div class="include-dot"></div>Carrinho de compras</div>
           <div class="include-item"><div class="include-dot"></div>Checkout integrado</div>
           <div class="include-item"><div class="include-dot"></div>Integração com meios de pagamento</div>
           <div class="include-item"><div class="include-dot"></div>Área de gerenciamento de pedidos</div>
           <div class="include-item"><div class="include-dot"></div>Cadastro de produtos e categorias</div>
-          <div class="include-item"><div class="include-dot"></div>Integração com WhatsApp e redes sociais</div>
-          <div class="include-item"><div class="include-dot"></div>Otimização básica de performance e SEO</div>
+          <div class="include-item"><div class="include-dot"></div>Integrações com WhatsApp e redes sociais</div>
+          <div class="include-item"><div class="include-dot"></div>SEO básico</div>
           <div class="include-item"><div class="include-dot"></div>Páginas <span class="rosa">ilimitadas</span></div>
           <div class="include-item"><div class="include-dot"></div>Revisões <span class="rosa">ilimitadas</span></div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
@@ -383,13 +379,11 @@
         <p>Um site completo, desenvolvido sob medida para o seu negócio, pensado para atender suas necessidades de forma estratégica, profissional e escalável.</p>
         <div class="servico-includes">
           <div class="servico-includes-label">O que está incluso</div>
-          <div class="include-item"><div class="include-dot"></div>Foco em Experiência do usuário e Design de Interface</div>
           <div class="include-item"><div class="include-dot"></div>Design exclusivo</div>
-          <div class="include-item"><div class="include-dot"></div>Desenvolvimento inicia após a aprovação do layout do site.</div>
           <div class="include-item"><div class="include-dot"></div>Desenvolvimento completo</div>
-          <div class="include-item"><div class="include-dot"></div>Responsivo para celular e computador</div>
-          <div class="include-item"><div class="include-dot"></div>Integração com WhatsApp, formulários e redes sociais</div>
-          <div class="include-item"><div class="include-dot"></div>Otimização básica de performance e SEO</div>
+          <div class="include-item"><div class="include-dot"></div>Responsivo</div>
+          <div class="include-item"><div class="include-dot"></div>Integrações com WhatsApp e redes sociais</div>
+          <div class="include-item"><div class="include-dot"></div>SEO básico</div>
           <div class="include-item"><div class="include-dot"></div>Páginas <span class="rosa">ilimitadas</span></div>
           <div class="include-item"><div class="include-dot"></div>Revisões <span class="rosa">ilimitadas</span></div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
