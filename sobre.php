@@ -87,6 +87,7 @@
     border: 0.5px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
+    align-items: stretch;
   }
 
   .area-card {
@@ -171,11 +172,6 @@
     font-weight: 400;
     line-height: 1.65;
     flex: 1;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    line-clamp: 6;
-    -webkit-box-orient: vertical;
   }
 
   .area-tags {
