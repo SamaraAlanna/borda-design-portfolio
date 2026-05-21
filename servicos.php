@@ -18,17 +18,23 @@
   .servicos-carousel-wrapper {
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: stretch;
+  }
+
+  .servicos-grid {
+    flex: 1;
   }
 
   #srv-prev,
   #srv-next {
-    position: absolute;
-    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
   }
 
-  #srv-prev { left: -56px; }
-  #srv-next { right: -56px; }
+  #srv-prev { margin-right: 1rem; }
+  #srv-next { margin-left: 1rem; }
 
   .servicos-grid {
     display: flex;
@@ -295,7 +301,7 @@
           <div class="include-item"><div class="include-dot"></div>Mockup de aplicação</div>
           <div class="include-item"><div class="include-dot"></div>Manual de marca</div>
           <div class="include-item"><div class="include-dot"></div>Arquivos em AI, PDF e PNG</div>
-          <div class="include-item"><div class="include-dot"></div>Ajustes e revisões <span class="rosa">ilimitadas</span></div>
+          <div class="include-item"><div class="include-dot"></div>Ajustes e revisões<span class="rosa">ilimitadas</span></div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
           <div class="include-item"><div class="include-dot"></div>Marcas</div>
           <div class="include-item"><div class="include-dot"></div>Empresas</div>
@@ -351,8 +357,8 @@
           <div class="include-item"><div class="include-dot"></div>Loja completa com carrinho, checkout e pagamentos</div>
           <div class="include-item"><div class="include-dot"></div>Integrações com WhatsApp e redes sociais</div>
           <div class="include-item"><div class="include-dot"></div>SEO básico</div>
-          <div class="include-item"><div class="include-dot"></div>Páginas <span class="rosa">ilimitadas</span></div>
-          <div class="include-item"><div class="include-dot"></div>Revisões <span class="rosa">ilimitadas</span></div>
+          <div class="include-item"><div class="include-dot"></div>Páginas<span class="rosa">ilimitadas</span></div>
+          <div class="include-item"><div class="include-dot"></div>Revisões<span class="rosa">ilimitadas</span></div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
           <div class="include-item"><div class="include-dot"></div>Lojas</div>
           <div class="include-item"><div class="include-dot"></div>Marcas</div>
@@ -379,8 +385,8 @@
           <div class="include-item"><div class="include-dot"></div>Responsivo</div>
           <div class="include-item"><div class="include-dot"></div>Integrações com WhatsApp e redes sociais</div>
           <div class="include-item"><div class="include-dot"></div>SEO básico</div>
-          <div class="include-item"><div class="include-dot"></div>Páginas <span class="rosa">ilimitadas</span></div>
-          <div class="include-item"><div class="include-dot"></div>Revisões <span class="rosa">ilimitadas</span></div>
+          <div class="include-item"><div class="include-dot"></div>Páginas<span class="rosa">ilimitadas</span></div>
+          <div class="include-item"><div class="include-dot"></div>Revisões<span class="rosa">ilimitadas</span></div>
           <div class="servico-includes-label" style="margin-top: 1rem;">Recomendado para</div>
           <div class="include-item"><div class="include-dot"></div>Marcas</div>
           <div class="include-item"><div class="include-dot"></div>Empresas</div>
