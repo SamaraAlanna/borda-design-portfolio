@@ -4,8 +4,8 @@
   }
 
   .servicos .container {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .servicos-header {
@@ -37,13 +37,14 @@
 
   .servicos-carousel-wrapper {
     position: relative;
-    display: flex;
-    align-items: center;
+    padding-left: 56px;
+    padding-right: 56px;
   }
 
   .servicos-grid {
     flex: 1;
     min-width: 0;
+    width: 100%;
     display: flex;
     gap: 1px;
     background: var(--border);
@@ -54,6 +55,7 @@
     overscroll-behavior: none;
     -webkit-overflow-scrolling: auto;
     touch-action: pan-x;
+    scrollbar-width: none;
   }
   .servicos-grid::-webkit-scrollbar { display: none; }
 
@@ -303,20 +305,18 @@
 
   #srv-prev {
     position: absolute;
-    left: -56px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    flex-shrink: 0;
   }
 
   #srv-next {
     position: absolute;
-    right: -56px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    flex-shrink: 0;
   }
 
   .carousel-btn {
