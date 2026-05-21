@@ -354,6 +354,13 @@
     .servicos-header-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
   }
   @media (max-width: 600px) { .servico-card { flex: 0 0 100%; } }
+
+  @media (max-width: 600px) {
+    .btn-quiz-header {
+      width: auto;
+      display: inline-flex;
+    }
+  }
 </style>
 
 <section class="servicos" id="servicos">

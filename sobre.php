@@ -209,6 +209,13 @@
   @media (max-width: 600px) {
     .areas-grid { grid-template-columns: 1fr; }
   }
+
+  @media (max-width: 600px) {
+    .btn-cv {
+      width: auto;
+      display: inline-flex;
+    }
+  }
 </style>
 
 <section class="sobre" id="sobre">

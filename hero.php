@@ -159,6 +159,18 @@
 
   .btn-ghost:hover        { color: var(--accent); border-color: rgba(230,183,211,0.4); transform: translateY(-2px); }
   .btn-ghost:hover::before { transform: translateX(0); }
+
+  @media (max-width: 600px) {
+    .hero-actions {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .btn-primary,
+    .btn-ghost {
+      width: auto;
+      display: inline-flex;
+    }
+  }
 </style>
 
 <div class="hero-wrap">
