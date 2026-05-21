@@ -17,13 +17,13 @@
   }
 
   .servicos-carousel-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
     align-items: center;
     gap: 1rem;
   }
 
   .servicos-grid {
-    flex: 1;
     min-width: 0;
     display: flex;
     gap: 1px;
@@ -42,11 +42,10 @@
     flex: 0 0 calc(33.333% - 1px);
     scroll-snap-align: start;
     background: var(--bg2);
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 480px;
+    min-height: 520px;
     position: relative;
     overflow: hidden;
     transition: background 0.25s;
@@ -71,6 +70,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
+    min-height: 36px;
+    margin-bottom: 1rem;
   }
 
   .servico-icon {
@@ -84,7 +85,6 @@
     justify-content: center;
     color: var(--accent);
     flex-shrink: 0;
-    margin-bottom: 1rem;
   }
   .servico-icon svg { width: 16px; height: 16px; }
 
@@ -105,7 +105,7 @@
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.75rem 0;
   }
 
   .servico-card > p {
@@ -113,6 +113,7 @@
     color: var(--text-muted);
     line-height: 1.7;
     margin: 0 0 1.5rem 0;
+    flex-shrink: 0;
   }
 
   .card-acc {
@@ -120,8 +121,11 @@
     border-radius: var(--radius-sm);
     overflow: hidden;
     margin-bottom: 0.5rem;
+    flex-shrink: 0;
+    transition: border-color 0.2s;
   }
   .card-acc:last-of-type { margin-bottom: 0; }
+  .card-acc:has(.card-acc-trigger.open) { border-color: var(--accent); }
 
   .card-acc-trigger {
     width: 100%;
@@ -136,7 +140,11 @@
     transition: background 0.2s;
   }
   .card-acc-trigger:hover { background: rgba(255,255,255,0.04); }
-  .card-acc-trigger.open { background: var(--accent-dim); }
+  .card-acc-trigger.open {
+    background: var(--accent-dim);
+    border-bottom: 0.5px solid var(--accent-border);
+    box-shadow: 0 0 8px rgba(230,183,211,0.25);
+  }
 
   .card-acc-label {
     font-size: 0.68rem;
@@ -196,7 +204,7 @@
   .servico-footer {
     margin-top: auto;
     border-top: 0.5px solid var(--border);
-    padding-top: 1rem;
+    padding-top: 1.25rem;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
