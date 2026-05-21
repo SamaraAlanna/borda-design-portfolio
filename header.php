@@ -18,6 +18,11 @@
     --radius:        12px;
     --radius-sm:     8px;
     --max-width:     1200px;
+    --text-xs:       0.75rem;
+    --text-sm:       0.78rem;
+    --text-base:     0.9rem;
+    --text-md:       1.05rem;
+    --text-lg:       1.1rem;
   }
 
   html {

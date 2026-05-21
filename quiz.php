@@ -44,7 +44,7 @@
   }
 
   .quiz-question {
-    font-size: 1.1rem;
+    font-size: var(--text-lg);
     font-weight: 600;
     color: var(--text);
     letter-spacing: -0.02em;
@@ -65,7 +65,7 @@
     padding: 1rem 1.25rem;
     cursor: pointer;
     font-family: var(--font);
-    font-size: 0.9rem;
+    font-size: var(--text-base);
     font-weight: 400;
     color: var(--text-muted);
     text-align: left;
@@ -108,7 +108,7 @@
   .quiz-result.active { display: flex; }
 
   .quiz-result-title {
-    font-size: 1rem;
+    font-size: var(--text-md);
     font-weight: 600;
     color: var(--text);
     letter-spacing: -0.02em;
@@ -147,7 +147,7 @@
   .result-icon svg { width: 18px; height: 18px; }
 
   .result-name {
-    font-size: 1rem;
+    font-size: var(--text-md);
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
@@ -155,19 +155,19 @@
   }
 
   .result-price {
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     color: var(--text-muted);
   }
 
   .result-desc {
-    font-size: 0.82rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     line-height: 1.65;
     margin: 0;
   }
 
   .result-note {
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     color: var(--accent);
     background: var(--accent-dim);
     border: 0.5px solid var(--accent-border);
@@ -187,7 +187,7 @@
     background: var(--accent);
     color: #1a1018;
     font-family: var(--font);
-    font-size: 0.88rem;
+    font-size: var(--text-base);
     font-weight: 600;
     padding: 0.85rem 1.5rem;
     border-radius: 99px;
@@ -210,7 +210,7 @@
     border-radius: 99px;
     padding: 0.85rem 1.5rem;
     font-family: var(--font);
-    font-size: 0.82rem;
+    font-size: var(--text-base);
     font-weight: 400;
     color: var(--text-muted);
     cursor: pointer;
@@ -227,7 +227,7 @@
     background: transparent;
     border: none;
     font-family: var(--font);
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     color: var(--text-dim);
     cursor: pointer;
     text-align: center;

@@ -16,7 +16,7 @@
     transform: translateZ(0);
   }
   .marquee-item {
-    font-size: 0.72rem;
+    font-size: var(--text-xs);
     font-weight: 500;
     color: var(--text-dim);
     letter-spacing: 0.1em;

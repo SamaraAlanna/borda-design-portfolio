@@ -13,7 +13,7 @@
   .faq-group:last-child { margin-bottom: 0; }
 
   .faq-group-label {
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     font-weight: 500;
     color: var(--text-muted);
     letter-spacing: 0.1em;
@@ -52,7 +52,7 @@
   .faq-trigger.open { background: var(--accent-dim); }
 
   .faq-question {
-    font-size: 0.92rem;
+    font-size: var(--text-base);
     font-weight: 500;
     color: var(--text);
     line-height: 1.4;
@@ -78,7 +78,7 @@
 
   .faq-answer {
     padding: 1rem 1.25rem 1.25rem;
-    font-size: 0.88rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     line-height: 1.75;
     border-top: 0.5px solid var(--border);

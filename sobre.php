@@ -1,6 +1,6 @@
 <style>
   .section-label {
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     font-weight: 500;
     color: var(--accent);
     letter-spacing: 0.12em;
@@ -39,7 +39,7 @@
     background: var(--accent);
     color: #1a1018;
     font-family: var(--font);
-    font-size: 0.82rem;
+    font-size: var(--text-base);
     font-weight: 600;
     padding: 0.6rem 1.35rem;
     border-radius: 99px;
@@ -72,7 +72,7 @@
   }
 
   .sobre-text p {
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     font-weight: 400;
     line-height: 1.8;
@@ -130,7 +130,7 @@
   .area-card:hover::after { opacity: 1; }
 
   .area-num {
-    font-size: 0.68rem;
+    font-size: var(--text-xs);
     color: var(--text-dim);
     letter-spacing: 0.06em;
     font-weight: 500;
@@ -160,7 +160,7 @@
   .area-card:hover .area-icon { background: var(--accent-mid); transform: translateY(-2px); }
 
   .area-card h4 {
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
@@ -168,7 +168,7 @@
   }
 
   .area-card p {
-    font-size: 0.88rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     font-weight: 400;
     line-height: 1.65;
@@ -192,7 +192,7 @@
     border: 0.5px solid var(--border);
     border-radius: 99px;
     padding: 0.18rem 0.6rem;
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     color: var(--text-muted);
     transition: border-color 0.2s, color 0.2s;
   }

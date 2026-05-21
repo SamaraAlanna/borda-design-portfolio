@@ -13,7 +13,7 @@
   }
 
   .servicos-header p {
-    font-size: 0.95rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     max-width: 480px;
     line-height: 1.7;
@@ -24,7 +24,7 @@
     background: var(--accent);
     color: #1a1018;
     font-family: var(--font);
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     font-weight: 600;
     padding: 0.55rem 1.1rem;
     border-radius: 99px;
@@ -113,7 +113,7 @@
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
     padding: 0.18rem 0.65rem;
-    font-size: 0.72rem;
+    font-size: var(--text-xs);
     font-weight: 500;
     color: var(--accent);
     letter-spacing: 0.04em;
@@ -125,14 +125,14 @@
     border: 0.5px solid rgba(55,138,221,0.30);
     border-radius: 99px;
     padding: 0.18rem 0.65rem;
-    font-size: 0.67rem;
+    font-size: var(--text-xs);
     font-weight: 500;
     color: #378add;
     letter-spacing: 0.04em;
   }
 
   .servico-card h3 {
-    font-size: 1rem;
+    font-size: var(--text-md);
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
@@ -140,7 +140,7 @@
   }
 
   .servico-card > p {
-    font-size: 0.88rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     line-height: 1.7;
     margin: 0 0 1.5rem 0;
@@ -178,7 +178,7 @@
   }
 
   .card-acc-label {
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     font-weight: 500;
     color: var(--text-dim);
     letter-spacing: 0.08em;
@@ -215,7 +215,7 @@
     display: flex;
     align-items: flex-start;
     gap: 0.5rem;
-    font-size: 0.85rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     line-height: 1.4;
   }
@@ -243,7 +243,7 @@
   }
 
   .servico-price-label {
-    font-size: 0.72rem;
+    font-size: var(--text-xs);
     color: var(--text-dim);
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -259,7 +259,7 @@
   }
 
   .servico-prazo {
-    font-size: 0.75rem;
+    font-size: var(--text-xs);
     color: var(--text-dim);
     margin-top: 0.2rem;
   }
@@ -269,7 +269,7 @@
     background: var(--accent);
     color: #1a1018;
     font-family: var(--font);
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     font-weight: 600;
     padding: 0.65rem 1.1rem;
     border-radius: 99px;
@@ -329,7 +329,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: var(--text-lg);
     flex-shrink: 0;
     align-self: center;
     transition: background 0.25s, color 0.25s, box-shadow 0.25s;

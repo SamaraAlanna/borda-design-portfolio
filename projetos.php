@@ -11,7 +11,7 @@
   }
 
   .section-header a {
-    font-size: 0.82rem;
+    font-size: var(--text-base);
     color: var(--text-muted);
     text-decoration: none;
     display: flex;
@@ -90,7 +90,7 @@
   }
 
   .proj-placeholder-icon  { font-size: 1.5rem; color: var(--text-dim); opacity: 0.3; }
-  .proj-placeholder-label { font-size: 0.68rem; color: var(--text-dim); letter-spacing: 0.06em; text-transform: uppercase; }
+  .proj-placeholder-label { font-size: var(--text-xs); color: var(--text-dim); letter-spacing: 0.06em; text-transform: uppercase; }
 
   .proj-content {
     padding: 1.5rem 1.75rem 1.75rem;
@@ -111,18 +111,18 @@
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
     padding: 0.18rem 0.65rem;
-    font-size: 0.68rem;
+    font-size: var(--text-xs);
     color: var(--accent);
   }
 
   .proj-num {
-    font-size: 0.68rem;
+    font-size: var(--text-xs);
     color: var(--text-dim);
     letter-spacing: 0.06em;
   }
 
   .project-card h3 {
-    font-size: 1rem;
+    font-size: var(--text-md);
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
@@ -130,7 +130,7 @@
   }
 
   .project-card p {
-    font-size: 0.8rem;
+    font-size: var(--text-sm);
     color: var(--text-muted);
     font-weight: 400;
     line-height: 1.65;
@@ -163,7 +163,7 @@
   .project-card:hover .tool-tag { border-color: rgba(230,183,211,0.15); color: var(--text-muted); }
 
   .proj-arrow {
-    font-size: 0.9rem;
+    font-size: var(--text-base);
     color: var(--accent);
     opacity: 0;
     transform: translate(-4px, 4px);

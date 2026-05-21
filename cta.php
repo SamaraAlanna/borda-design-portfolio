@@ -23,7 +23,7 @@
     pointer-events: none;
   }
   .cta-eyebrow {
-    font-size: 0.7rem;
+    font-size: var(--text-xs);
     font-weight: 500;
     color: var(--accent);
     letter-spacing: 0.12em;
@@ -56,7 +56,7 @@
   .btn-cta {
     background: var(--accent);
     color: #1a1018;
-    font-size: 0.9rem;
+    font-size: var(--text-base);
     font-weight: 500;
     padding: 0.9rem 2rem;
     border-radius: 99px;

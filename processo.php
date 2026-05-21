@@ -52,13 +52,13 @@
     margin-bottom: 1.25rem;
   }
   .step h4 {
-    font-size: 0.9rem;
+    font-size: var(--text-base);
     font-weight: 600;
     color: var(--text);
     margin-bottom: 0.5rem;
   }
   .step p {
-    font-size: 0.78rem;
+    font-size: var(--text-sm);
     color: var(--text-dim);
     line-height: 1.65;
   }
