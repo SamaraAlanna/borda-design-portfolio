@@ -33,6 +33,7 @@
 
   html {
     overflow-x: hidden;
+    max-width: 100vw;
     scroll-behavior: smooth;
     scroll-padding-top: 64px;
   }
@@ -45,6 +46,8 @@
     font-size: 16px;
     line-height: 1.6;
     padding-top: 64px;
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
   .container {
