@@ -201,6 +201,12 @@
   @media (max-width: 960px) {
     * { cursor: default !important; }
   }
+
+  @media (max-width: 960px) {
+    html, body, a, button, input, select, textarea, [role="button"] {
+      cursor: default !important;
+    }
+  }
 </style>
 
 <nav>
