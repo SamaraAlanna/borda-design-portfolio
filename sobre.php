@@ -95,7 +95,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.85rem;
-    height: 400px;
+    min-height: 400px;
     transition: background 0.25s, box-shadow 0.25s;
     position: relative;
     overflow: hidden;
