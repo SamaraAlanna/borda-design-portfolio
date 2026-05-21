@@ -174,7 +174,7 @@
   .nav-dropdown {
     display: none;
     position: fixed;
-    top: 64px;
+    top: 63px;
     left: 0;
     right: 0;
     z-index: 9998;
