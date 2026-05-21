@@ -58,51 +58,144 @@ function smoothScrollTo(target, duration, center) {
 }
 
 /* ─── Animations ─── */
-(function() {
-  var css = document.createElement('style');
-  css.textContent = [
-    '@keyframes heroUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}',
-    '.hero-badge  {animation:heroUp .7s cubic-bezier(.16,1,.3,1) .1s  both}',
-    '.hero h1     {animation:heroUp .7s cubic-bezier(.16,1,.3,1) .25s both}',
-    '.hero-desc   {animation:heroUp .7s cubic-bezier(.16,1,.3,1) .4s  both}',
-    '.hero-actions{animation:heroUp .7s cubic-bezier(.16,1,.3,1) .55s both}',
-    '.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.16,1,.3,1),transform .6s cubic-bezier(.16,1,.3,1)}',
-    '.reveal.in-view{opacity:1;transform:none}'
-  ].join('');
-  document.head.appendChild(css);
+(function () {
 
-  var singles = [
-    '.section-label',
-    '.section-title',
-    '.sobre-text p',
-    '.btn-cv',
-    '.servicos-header p',
-    '.section-header > a',
-    '.cta-eyebrow',
-    '.cta h2',
-    '.cta p',
-    '.cta-actions'
-  ];
+  /* ── CSS ── */
+  var s = document.createElement('style');
+  s.textContent =
+    /* Cursor */
+    '.c-dot{position:fixed;top:0;left:0;width:5px;height:5px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:opacity .3s}' +
+    '.c-ring{position:fixed;top:0;left:0;width:32px;height:32px;border:1.5px solid rgba(230,183,211,.28);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:width .35s,height .35s,border-color .35s}' +
+    '.c-ring.hover{width:54px;height:54px;border-color:rgba(230,183,211,.55)}' +
+    '.c-ring.click{width:18px;height:18px;border-color:var(--accent)}' +
+    /* Scroll progress */
+    '.scroll-prog{position:fixed;top:64px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),rgba(230,183,211,.35));transform-origin:left;transform:scaleX(0);z-index:99;pointer-events:none}' +
+    /* Hero entrance */
+    '@keyframes heroUp{from{opacity:0;transform:translateY(30px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}' +
+    '.hero-badge{animation:heroUp .85s cubic-bezier(.16,1,.3,1) .05s both}' +
+    '.hero h1{animation:heroUp .9s cubic-bezier(.16,1,.3,1) .2s both}' +
+    '.hero-desc{animation:heroUp .85s cubic-bezier(.16,1,.3,1) .38s both}' +
+    '.hero-actions{animation:heroUp .85s cubic-bezier(.16,1,.3,1) .54s both}' +
+    /* Scroll reveal */
+    '.reveal{opacity:0;transform:translateY(36px) scale(.97);filter:blur(5px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1),filter .75s cubic-bezier(.16,1,.3,1)}' +
+    '.reveal.in-view{opacity:1;transform:none;filter:none}' +
+    /* Clip-path reveal for headings */
+    '.clip-h{clip-path:inset(0 0 110% 0);transition:clip-path .85s cubic-bezier(.16,1,.3,1)}' +
+    '.clip-h.in-view{clip-path:inset(0 0 0% 0)}' +
+    /* Cursor-tracked glow */
+    '.area-card,.project-card,.servico-card,.step{--gx:50%;--gy:50%}' +
+    '.area-card::before,.servico-card::before{background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.22) 0%,transparent 62%)!important}' +
+    '.project-card::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--gx) var(--gy),rgba(230,183,211,.12) 0%,transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none;z-index:0}' +
+    '.project-card:hover::before{opacity:1}';
+  document.head.appendChild(s);
 
-  singles.forEach(function(sel) {
-    document.querySelectorAll(sel).forEach(function(el) {
-      el.classList.add('reveal');
-    });
+  /* ── Custom cursor ── */
+  var dot  = document.createElement('div'); dot.className  = 'c-dot';
+  var ring = document.createElement('div'); ring.className = 'c-ring';
+  document.body.appendChild(dot);
+  document.body.appendChild(ring);
+
+  var mx = -200, my = -200, rx = -200, ry = -200;
+  document.addEventListener('mousemove', function (e) {
+    mx = e.clientX; my = e.clientY;
+    dot.style.left = mx + 'px';
+    dot.style.top  = my + 'px';
+  });
+  (function raf() {
+    rx += (mx - rx) * 0.1;
+    ry += (my - ry) * 0.1;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(raf);
+  })();
+  document.querySelectorAll('a, button, .area-card, .project-card, .servico-card, .step').forEach(function (el) {
+    el.addEventListener('mouseenter', function () { ring.classList.add('hover'); });
+    el.addEventListener('mouseleave', function () { ring.classList.remove('hover'); });
+  });
+  document.addEventListener('mousedown', function () { ring.classList.add('click'); });
+  document.addEventListener('mouseup',   function () { ring.classList.remove('click'); });
+
+  /* ── Scroll progress bar ── */
+  var prog = document.createElement('div');
+  prog.className = 'scroll-prog';
+  document.body.appendChild(prog);
+  window.addEventListener('scroll', function () {
+    var pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    prog.style.transform = 'scaleX(' + pct + ')';
+  }, { passive: true });
+
+  /* ── Reveal: labels, textos, ações ── */
+  ['.section-label', '.btn-cv', '.sobre-text p', '.servicos-header p',
+   '.section-header > a', '.cta-eyebrow', '.cta p', '.cta-actions'].forEach(function (sel) {
+    document.querySelectorAll(sel).forEach(function (el) { el.classList.add('reveal'); });
   });
 
-  document.querySelectorAll('.area-card, .project-card, .servico-card, .step').forEach(function(el) {
+  /* ── Clip-path para títulos grandes ── */
+  document.querySelectorAll('.section-title, .processo h2, .cta h2').forEach(function (el) {
+    el.classList.add('clip-h');
+  });
+
+  /* ── Cards escalonados ── */
+  document.querySelectorAll('.area-card, .project-card, .servico-card, .step').forEach(function (el) {
     el.classList.add('reveal');
     var idx = Array.from(el.parentElement.children).indexOf(el);
-    el.style.transitionDelay = (idx * 80) + 'ms';
+    el.style.transitionDelay = (idx * 110) + 'ms';
   });
 
-  var obs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
+  /* ── IntersectionObserver ── */
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
       if (e.isIntersecting) { e.target.classList.add('in-view'); obs.unobserve(e.target); }
     });
-  }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  }, { threshold: 0.07, rootMargin: '0px 0px -20px 0px' });
+  document.querySelectorAll('.reveal, .clip-h').forEach(function (el) { obs.observe(el); });
 
-  document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
+  /* ── 3D tilt em cards ── */
+  document.querySelectorAll('.area-card, .project-card').forEach(function (card) {
+    card.addEventListener('mousemove', function (e) {
+      var r = card.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width  - 0.5;
+      var y = (e.clientY - r.top)  / r.height - 0.5;
+      card.style.transition = 'transform 0.1s ease, background 0.25s, box-shadow 0.25s';
+      card.style.transform  = 'perspective(700px) rotateY(' + (x * 9) + 'deg) rotateX(' + (-y * 9) + 'deg) scale(1.018)';
+    });
+    card.addEventListener('mouseleave', function () {
+      card.style.transition = 'transform 0.55s cubic-bezier(.16,1,.3,1), background 0.25s, box-shadow 0.25s';
+      card.style.transform  = '';
+    });
+  });
+
+  /* ── Cursor glow dentro dos cards ── */
+  document.querySelectorAll('.area-card, .project-card, .servico-card, .step').forEach(function (card) {
+    card.addEventListener('mousemove', function (e) {
+      var r = card.getBoundingClientRect();
+      card.style.setProperty('--gx', (e.clientX - r.left) + 'px');
+      card.style.setProperty('--gy', (e.clientY - r.top)  + 'px');
+    });
+  });
+
+  /* ── Counter animado nos preços ── */
+  document.querySelectorAll('.servico-price').forEach(function (el) {
+    var orig = el.textContent.trim();
+    var num  = parseInt(orig.replace(/\D/g, ''), 10);
+    var done = false;
+    var po = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting && !done) {
+        done = true; po.disconnect();
+        var t0 = null, dur = 900;
+        (function tick(t) {
+          if (!t0) t0 = t;
+          var p = Math.min((t - t0) / dur, 1);
+          var e = 1 - Math.pow(1 - p, 3);
+          el.textContent = 'R$' + Math.round(e * num).toLocaleString('pt-BR');
+          if (p < 1) requestAnimationFrame(tick);
+          else el.textContent = orig;
+        })(performance.now());
+      }
+    }, { threshold: 0.5 });
+    po.observe(el);
+  });
+
 })();
 
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
