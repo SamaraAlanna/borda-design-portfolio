@@ -62,7 +62,7 @@
     pointer-events: none;
   }
 
-  .btn-cv:hover        { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(230,183,211,0.38); }
+  .btn-cv:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(230,183,211,0.38); }
   .btn-cv:hover::before { animation: btnShimmer 0.55s cubic-bezier(.4,0,.2,1) forwards; }
 
   .btn-cv svg {
@@ -82,13 +82,12 @@
   .areas-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
     gap: 1px;
     background: var(--border);
     border: 0.5px solid var(--border);
     border-radius: var(--radius);
     overflow: hidden;
-    align-items: stretch;
-    grid-auto-rows: 1fr;
   }
 
   .area-card {
@@ -96,8 +95,6 @@
     padding: 1.75rem;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
-    height: 100%;
     transition: background 0.25s, box-shadow 0.25s;
     position: relative;
     overflow: hidden;
@@ -128,15 +125,16 @@
     transition: opacity 0.25s;
   }
 
-  .area-card:hover          { background: var(--bg3); box-shadow: 0 8px 32px rgba(230,183,211,0.08); }
-  .area-card:hover::before  { opacity: 1; }
-  .area-card:hover::after   { opacity: 1; }
+  .area-card:hover { background: var(--bg3); box-shadow: 0 8px 32px rgba(230,183,211,0.08); }
+  .area-card:hover::before { opacity: 1; }
+  .area-card:hover::after { opacity: 1; }
 
   .area-num {
     font-size: 0.68rem;
     color: var(--text-dim);
     letter-spacing: 0.06em;
     font-weight: 500;
+    margin-bottom: 0.85rem;
   }
 
   .area-icon {
@@ -150,6 +148,7 @@
     justify-content: center;
     color: var(--accent);
     transition: background 0.2s, transform 0.2s;
+    margin-bottom: 0.85rem;
   }
 
   .area-icon svg {
@@ -165,6 +164,7 @@
     font-weight: 700;
     color: var(--text);
     letter-spacing: -0.02em;
+    margin-bottom: 0.85rem;
   }
 
   .area-card p {
@@ -172,7 +172,7 @@
     color: var(--text-muted);
     font-weight: 400;
     line-height: 1.65;
-    flex-grow: 1;
+    flex: 1;
   }
 
   .area-tags {
@@ -181,7 +181,7 @@
     gap: 0.35rem;
     padding-top: 0.85rem;
     border-top: 0.5px solid var(--border);
-    margin-top: auto;
+    margin-top: 1.5rem;
   }
 
   .tag {
@@ -194,20 +194,17 @@
     transition: border-color 0.2s, color 0.2s;
   }
 
-  .area-card:hover .tag { 
-    border-color: var(--accent-border); 
-    color: var(--accent); 
+  .area-card:hover .tag {
+    border-color: var(--accent-border);
+    color: var(--accent);
   }
 
   @media (max-width: 960px) {
-    .areas-grid { grid-template-columns: repeat(2, 1fr); }
-    .area-card { height: auto; min-height: 260px; }
+    .areas-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: auto; }
   }
   @media (max-width: 600px) {
     .areas-grid { grid-template-columns: 1fr; }
-    .area-card { height: auto; min-height: 0; }
   }
-
 </style>
 
 <section class="sobre" id="sobre">
@@ -221,8 +218,7 @@
           Download CV
         </a>
       </div>
-      <p>Olá, sou a Samara Alanna, fundadora do estúdio Borda Design.
-        Sou especialista em UX/UI Design, identidade visual e desenvolvimento de sites. Atualmente curso Análise e Desenvolvimento de Sistemas e Design Gráfico, unindo a parte visual com a técnica para criar projetos mais completos.</p>
+      <p>Olá, sou a Samara Alanna, fundadora do estúdio Borda Design. Sou especialista em UX/UI Design, identidade visual e desenvolvimento de sites. Atualmente curso Análise e Desenvolvimento de Sistemas e Design Gráfico, unindo a parte visual com a técnica para criar projetos mais completos.</p>
       <p>Hoje trabalho em uma agência como UX/UI Designer e Desenvolvedora Full Stack, atuando no setor automotivo e atendendo marcas reconhecidas como Mercedes-Benz, BMW, Nissan, Volkswagen Caminhões e Ônibus e Michelin.</p>
       <p>Uma das coisas que mais valorizo no meu trabalho é entregar projetos com qualidade, agilidade e atenção aos detalhes. Gosto de manter um processo próximo do cliente, tornando tudo mais leve, organizado e transparente durante o desenvolvimento.</p>
     </div>
