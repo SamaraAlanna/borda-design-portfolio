@@ -26,18 +26,6 @@
     position: relative;
     overflow: hidden;
   }
-  .step::before {
-    content: '';
-    position: absolute;
-    bottom: -40px;
-    left: -40px;
-    width: 220px;
-    height: 220px;
-    background: radial-gradient(circle, rgba(230,183,211,0.14) 0%, transparent 65%);
-    opacity: 0;
-    transition: opacity 0.3s;
-    pointer-events: none;
-  }
   .step::after {
     content: '';
     position: absolute;
@@ -52,9 +40,6 @@
   .step:hover {
     background: var(--bg3);
     box-shadow: 0 8px 32px rgba(230,183,211,0.08);
-  }
-  .step:hover::before {
-    opacity: 1;
   }
   .step:hover::after {
     opacity: 1;
