@@ -1418,7 +1418,6 @@ nav {
 .swipe-hint {
   display: none;
   align-items: center;
-  justify-content: center;
   gap: 0.4rem;
   background: rgba(230,183,211,0.12);
   border: 0.5px solid var(--accent-border);
@@ -1430,7 +1429,7 @@ nav {
   animation: swipePulse 2s infinite;
   pointer-events: none;
   width: fit-content;
-  margin: 0 auto 0.75rem auto;
+  margin: 0 0 0.75rem 0;
   position: relative;
   z-index: 10;
 }
