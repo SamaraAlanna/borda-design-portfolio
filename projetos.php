@@ -13,7 +13,7 @@
     <div class="projects-grid">
       <a class="project-card" href="https://www.behance.net/gallery/247374871/Miriam-Araujo-Psicologa-Identidade-Visual-2026" target="_blank">
         <div class="proj-img">
-          <img src="miriam-araujo.png" alt="Míriam Araújo Psicóloga" />
+          <img src="uploads/miriam-araujo.png" alt="Míriam Araújo Psicóloga" />
         </div>
         <div class="proj-content">
           <div class="proj-top"><span class="proj-tag">Identidade Visual</span><span class="proj-num">01</span></div>
@@ -34,7 +34,7 @@
 
       <a class="project-card" href="https://www.behance.net/gallery/237145257/Aplicativo-Bilheteria-Digital-Redesign-Mobile-2025" target="_blank">
         <div class="proj-img">
-          <img src="bilheteria-digital.png" alt="Redesign de Aplicativo Bilheteria Digital" />
+          <img src="uploads/bilheteria-digital.png" alt="Redesign de Aplicativo Bilheteria Digital" />
         </div>
         <div class="proj-content">
           <div class="proj-top"><span class="proj-tag">UX/UI · App</span><span class="proj-num">02</span></div>
@@ -54,7 +54,7 @@
 
       <a class="project-card" href="https://www.behance.net/gallery/242617867/Gatuccino-Doces-e-Artes-Identidade-visual-2026" target="_blank">
         <div class="proj-img">
-          <img src="gatuccino.png" alt="Gatuccino Doces e Artes" />
+          <img src="uploads/gatuccino.png" alt="Gatuccino Doces e Artes" />
         </div>
         <div class="proj-content">
           <div class="proj-top"><span class="proj-tag">Identidade Visual</span><span class="proj-num">03</span></div>
