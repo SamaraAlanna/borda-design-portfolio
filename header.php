@@ -6,6 +6,7 @@
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
     <button class="nav-menu-btn" id="menuBtn" aria-label="Menu" onclick="toggleMenu()">
