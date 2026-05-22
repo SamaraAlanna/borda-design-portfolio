@@ -61,7 +61,7 @@
               <div class="servico-price">R$400</div>
               <div class="servico-prazo">Contrato mensal renovável</div>
             </div>
-            <a href="https://wa.me/5541920058670" class="btn-servico" target="_blank">Solicitar serviço</a>
+            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Suporte%20Mensal!" class="btn-servico" target="_blank">Solicitar serviço</a>
           </div>
         </div>
 
