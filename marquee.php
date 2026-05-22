@@ -1,35 +1,3 @@
-<style>
-  .marquee-wrap {
-    border-top: 0.5px solid var(--border);
-    overflow: hidden;
-    padding: 0.9rem 0;
-    background: var(--bg2);
-    position: relative;
-    z-index: 1;
-  }
-  .marquee-track {
-    display: flex;
-    gap: 2.5rem;
-    animation: marquee 22s linear infinite;
-    width: max-content;
-    will-change: transform;
-    transform: translateZ(0);
-  }
-  .marquee-item {
-    font-size: var(--text-xs);
-    font-weight: 500;
-    color: var(--text-dim);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    white-space: nowrap;
-  }
-  .marquee-item span { color: var(--accent); margin-right: 2.5rem; }
-  @keyframes marquee {
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
-  }
-</style>
-
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span class="marquee-item">UX Design <span>✦</span></span>
