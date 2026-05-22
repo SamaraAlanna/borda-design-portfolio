@@ -91,11 +91,6 @@ function smoothScrollTo(target, duration, center) {
   /* ── CSS ── */
   var s = document.createElement('style');
   s.textContent =
-    /* Cursor — usa transform em vez de left/top */
-    '.c-dot{position:fixed;top:0;left:0;width:5px;height:5px;background:var(--accent);border-radius:50%;pointer-events:none;z-index:9999;will-change:transform}' +
-    '.c-ring{position:fixed;top:0;left:0;width:32px;height:32px;border:1.5px solid rgba(230,183,211,.28);border-radius:50%;pointer-events:none;z-index:9998;will-change:transform;transition:width .35s,height .35s,border-color .35s}' +
-    '.c-ring.hover{width:54px;height:54px;border-color:rgba(230,183,211,.55)}' +
-    '.c-ring.click{width:18px;height:18px;border-color:var(--accent)}' +
     /* Scroll progress */
     '.scroll-prog{position:fixed;top:64px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),rgba(230,183,211,.35));transform-origin:left;transform:scaleX(0);z-index:99;pointer-events:none}' +
     /* Hero entrance */
@@ -121,30 +116,6 @@ function smoothScrollTo(target, duration, center) {
     '@keyframes fabIn{from{opacity:0;transform:translateY(20px) scale(.85)}to{opacity:1;transform:none}}' +
     '.fab-wa svg{width:28px;height:28px;fill:white}';
   document.head.appendChild(s);
-
-  /* ── Custom cursor (transform, sem left/top) ── */
-  var dot  = document.createElement('div'); dot.className = 'c-dot';
-  var ring = document.createElement('div'); ring.className = 'c-ring';
-  document.body.appendChild(dot);
-  document.body.appendChild(ring);
-
-  var mx = -200, my = -200, rx = -200, ry = -200;
-  document.addEventListener('mousemove', function (e) {
-    mx = e.clientX; my = e.clientY;
-    dot.style.transform = 'translate(' + (mx - 2.5) + 'px,' + (my - 2.5) + 'px)';
-  });
-  (function raf() {
-    rx += (mx - rx) * 0.1;
-    ry += (my - ry) * 0.1;
-    ring.style.transform = 'translate(calc(' + rx.toFixed(1) + 'px - 50%),calc(' + ry.toFixed(1) + 'px - 50%))';
-    requestAnimationFrame(raf);
-  })();
-  document.querySelectorAll('a, button, .area-card, .project-card, .servico-card').forEach(function (el) {
-    el.addEventListener('mouseenter', function () { ring.classList.add('hover'); });
-    el.addEventListener('mouseleave', function () { ring.classList.remove('hover'); });
-  });
-  document.addEventListener('mousedown', function () { ring.classList.add('click'); });
-  document.addEventListener('mouseup',   function () { ring.classList.remove('click'); });
 
   /* ── Scroll progress bar ── */
   var prog = document.createElement('div');
