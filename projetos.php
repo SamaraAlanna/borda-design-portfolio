@@ -191,7 +191,10 @@
         <div class="section-label">Projetos</div>
         <h2 class="section-title">Veja alguns de meus trabalhos</h2>
       </div>
-      <a href="#">↗ Ver todos os projetos</a>
+      <a href="#">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+        Ver todos os projetos
+      </a>
     </div>
     <div class="projects-grid">
       <a class="project-card" href="#">
