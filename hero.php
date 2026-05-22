@@ -162,8 +162,14 @@
 
   @media (max-width: 960px) {
     .hero-actions {
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: flex-start;
+    }
+    .hero-actions a:first-child {
+      order: 2;
+    }
+    .hero-actions a:last-child {
+      order: 1;
     }
   }
 
