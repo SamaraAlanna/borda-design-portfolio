@@ -362,7 +362,9 @@
   .swipe-hint {
     display: none;
     position: relative;
-    margin: 0.75rem auto 0;
+    margin: 0 0 0.75rem 0;
+    width: 100%;
+    justify-content: center;
     background: rgba(230,183,211,0.12);
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
@@ -400,6 +402,10 @@
     </div>
 
     <div class="servicos-carousel-wrapper">
+      <div class="swipe-hint" id="swipeHint">
+        <span>Deslize para ver mais</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+      </div>
       <button class="carousel-btn" id="srv-prev" aria-label="Anterior">&#8592;</button>
       <div class="servicos-grid">
 
@@ -696,10 +702,6 @@
           </div>
         </div>
 
-      </div>
-      <div class="swipe-hint" id="swipeHint">
-        <span>Deslize para ver mais</span>
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </div>
       <button class="carousel-btn" id="srv-next" aria-label="Próximo">&#8594;</button>
     </div>
