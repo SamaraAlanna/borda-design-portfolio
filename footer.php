@@ -91,8 +91,6 @@ function smoothScrollTo(target, duration, center) {
   /* ── CSS ── */
   var s = document.createElement('style');
   s.textContent =
-    /* Scroll progress */
-    '.scroll-prog{position:fixed;top:64px;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),rgba(230,183,211,.35));transform-origin:left;transform:scaleX(0);z-index:99;pointer-events:none}' +
     /* Hero entrance */
     '@keyframes heroUp{from{opacity:0;transform:translateY(30px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}' +
     '.hero-badge{animation:heroUp .85s cubic-bezier(.16,1,.3,1) .05s both}' +
@@ -116,15 +114,6 @@ function smoothScrollTo(target, duration, center) {
     '@keyframes fabIn{from{opacity:0;transform:translateY(20px) scale(.85)}to{opacity:1;transform:none}}' +
     '.fab-wa svg{width:28px;height:28px;fill:white}';
   document.head.appendChild(s);
-
-  /* ── Scroll progress bar ── */
-  var prog = document.createElement('div');
-  prog.className = 'scroll-prog';
-  document.body.appendChild(prog);
-  window.addEventListener('scroll', function () {
-    var pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-    prog.style.transform = 'scaleX(' + pct + ')';
-  }, { passive: true });
 
   /* ── Scroll reveal ── */
   ['.section-label', '.section-title', '.cta h2',
