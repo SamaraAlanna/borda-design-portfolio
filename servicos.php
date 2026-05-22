@@ -361,22 +361,20 @@
 
   .swipe-hint {
     display: none;
-    position: relative;
-    margin: 0 0 0.75rem 0;
-    width: 100%;
+    align-items: center;
     justify-content: center;
+    gap: 0.4rem;
     background: rgba(230,183,211,0.12);
     border: 0.5px solid var(--accent-border);
     border-radius: 99px;
     padding: 0.4rem 1rem;
     font-size: var(--text-xs);
     color: var(--accent);
-    gap: 0.4rem;
-    align-items: center;
     white-space: nowrap;
     animation: swipePulse 2s infinite;
     pointer-events: none;
-    z-index: 2;
+    width: fit-content;
+    margin: 0 auto 0.75rem auto;
   }
 
   @keyframes swipePulse {
@@ -385,7 +383,7 @@
   }
 
   @media (max-width: 960px) {
-    .swipe-hint { display: flex; justify-content: center; }
+    .swipe-hint { display: flex; }
     .servicos-carousel-wrapper { position: relative; }
   }
 </style>
