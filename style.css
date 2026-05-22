@@ -1452,6 +1452,10 @@ nav {
     width: auto;
     display: inline-flex;
   }
+  .servico-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ─── Processo ─── */
