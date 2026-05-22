@@ -31,6 +31,7 @@
     border-radius: 99px;
     text-decoration: none;
     white-space: nowrap;
+    margin-top: 1.5rem;
     flex-shrink: 0;
     transition: opacity 0.2s;
   }
