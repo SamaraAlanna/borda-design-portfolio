@@ -160,6 +160,13 @@
   .btn-ghost:hover        { color: var(--accent); border-color: rgba(230,183,211,0.4); transform: translateY(-2px); }
   .btn-ghost:hover::before { transform: translateX(0); }
 
+  @media (max-width: 960px) {
+    .hero-actions {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
   @media (max-width: 600px) {
     .hero-actions {
       flex-direction: column;
