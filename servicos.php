@@ -320,6 +320,18 @@
 function toggleCard(btn) {
   var body = btn.nextElementSibling;
   var isOpen = btn.classList.contains('open');
+
+  // Fecha todos os accordions de OUTROS cards
+  document.querySelectorAll('.servico-card').forEach(function(card) {
+    if (card !== btn.closest('.servico-card')) {
+      card.querySelectorAll('.card-acc-trigger.open').forEach(function(b) {
+        b.classList.remove('open');
+        b.nextElementSibling.classList.remove('open');
+      });
+    }
+  });
+
+  // Abre ou fecha o accordion clicado
   btn.classList.toggle('open', !isOpen);
   body.classList.toggle('open', !isOpen);
 }
