@@ -79,7 +79,7 @@ function smoothScrollTo(target, duration, center) {
    '.section-header > a', '.cta-eyebrow', '.cta p', '.cta-actions'].forEach(function (sel) {
     document.querySelectorAll(sel).forEach(function (el) { el.classList.add('reveal'); });
   });
-  document.querySelectorAll('.area-card, .project-card, .servico-card').forEach(function (el) {
+  document.querySelectorAll('.area-card, .project-card').forEach(function (el) {
     el.classList.add('reveal');
     var idx = Array.from(el.parentElement.children).indexOf(el);
     el.style.transitionDelay = (idx * 110) + 'ms';
@@ -92,7 +92,7 @@ function smoothScrollTo(target, duration, center) {
   document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
 
   /* ── Tilt 3D + cursor glow combinados, throttled com RAF ── */
-  document.querySelectorAll('.area-card, .project-card, .servico-card').forEach(function (card) {
+  document.querySelectorAll('.area-card, .project-card').forEach(function (card) {
     var isTilt = card.classList.contains('area-card') || card.classList.contains('project-card');
     var rafPending = false, pe = null;
 
