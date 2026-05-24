@@ -35,11 +35,9 @@
 
 <style>
 .theme-toggle-btn {
-  background: var(--accent-dim);
-  border: 0.5px solid var(--accent-border);
-  border-radius: 99px;
-  height: 36px;
-  padding: 0 1rem;
+  background: transparent;
+  border: none;
+  padding: 0 0.5rem;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -48,9 +46,9 @@
   font-size: 0.82rem;
   font-weight: 500;
   white-space: nowrap;
-  transition: background 0.2s;
+  transition: opacity 0.2s;
 }
-.theme-toggle-btn:hover { background: var(--accent-mid); }
+.theme-toggle-btn:hover { opacity: 0.75; }
 
 [data-theme="light"] .icon-moon,
 [data-theme="light"] .icon-moon-text { display: none; }
