@@ -1,6 +1,6 @@
 <footer>
   <div class="footer-inner">
-    <p class="footer-copy" data-i18n="footer.copy">© 2025 Samara Alanna.</p>
+    <p class="footer-copy" data-i18n="footer.copy">© 2026 Borda Design.</p>
     <div class="footer-links">
       <a href="https://www.instagram.com/bordadesignn/" target="_blank">Instagram</a>
       <a href="https://www.linkedin.com/in/samaraalanna/" target="_blank">LinkedIn</a>

@@ -214,7 +214,7 @@ var i18n = {
     "cta.btn": "Entrar em contato",
 
     /* FOOTER */
-    "footer.copy": "© 2025 Samara Alanna.",
+    "footer.copy": "© 2026 Borda Design.",
   },
 
   en: {
@@ -431,7 +431,7 @@ var i18n = {
     "cta.btn": "Get in touch",
 
     /* FOOTER */
-    "footer.copy": "© 2025 Samara Alanna.",
+    "footer.copy": "© 2026 Borda Design.",
   },
 };
 
