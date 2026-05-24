@@ -1,6 +1,6 @@
 <nav>
   <div class="nav-inner">
-    <a href="#hero" class="nav-logo">Samara Alanna</a>
+    <a href="#hero" class="nav-logo">Borda Design</a>
     <ul class="nav-links">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#projetos">Projetos</a></li>
