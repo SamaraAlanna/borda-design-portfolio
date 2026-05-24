@@ -45,7 +45,7 @@
   font-weight: 500;
   white-space: nowrap;
   transition: opacity 0.2s;
-  margin-right: 50px;
+  margin-right: 12px;
 }
 .theme-toggle-btn:hover { opacity: 0.75; }
 
