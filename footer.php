@@ -161,4 +161,9 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     smoothScrollTo(target, 700, href === '#servicos');
   });
 });
+
+document.querySelectorAll('a[href^="http"], a[href^="https"]').forEach(function(link) {
+  link.setAttribute('target', '_blank');
+  link.setAttribute('rel', 'noopener');
+});
 </script>
