@@ -2,9 +2,9 @@
   <div class="container">
     <div class="quiz-inner">
       <div class="quiz-header">
-        <div class="section-label">Quiz</div>
-        <h2 class="section-title">Que tal uma ajudinha?</h2>
-        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;">Responda 2 perguntas e descubra o serviço ideal para você.</p>
+        <div class="section-label" data-i18n="quiz.label">Quiz</div>
+        <h2 class="section-title" data-i18n="quiz.title">Que tal uma ajudinha?</h2>
+        <p style="font-size:0.9rem; color:var(--text-muted); margin-top:0.5rem;" data-i18n="quiz.subtitle">Responda 2 perguntas e descubra o serviço ideal para você.</p>
       </div>
 
       <div class="quiz-progress">
@@ -14,56 +14,56 @@
 
       <!-- STEP 1 -->
       <div class="quiz-step active" id="qstep-0">
-        <p class="quiz-question">O que você precisa?</p>
+        <p class="quiz-question" data-i18n="quiz.q1">O que você precisa?</p>
         <div class="quiz-options">
           <button class="quiz-option" onclick="qAnswer(0, 'marca')">
             <div class="quiz-option-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
             </div>
-            Criar ou renovar minha marca
+            <span data-i18n="quiz.opt1.1">Criar ou renovar minha marca</span>
           </button>
           <button class="quiz-option" onclick="qAnswer(0, 'site')">
             <div class="quiz-option-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
-            Site
+            <span data-i18n="quiz.opt1.2">Site</span>
           </button>
           <button class="quiz-option" onclick="qAnswer(0, 'loja')">
             <div class="quiz-option-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             </div>
-            Loja virtual
+            <span data-i18n="quiz.opt1.3">Loja virtual</span>
           </button>
           <button class="quiz-option" onclick="qAnswer(0, 'suporte')">
             <div class="quiz-option-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
             </div>
-            Suporte para o meu site
+            <span data-i18n="quiz.opt1.4">Suporte para o meu site</span>
           </button>
         </div>
       </div>
 
       <!-- STEP 2 -->
       <div class="quiz-step" id="qstep-1">
-        <p class="quiz-question">Qual é o seu orçamento?</p>
+        <p class="quiz-question" data-i18n="quiz.q2">Qual é o seu orçamento?</p>
         <div class="quiz-options">
           <button class="quiz-option" onclick="qAnswer(1, 'baixo')">
             <div class="quiz-option-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            Até R$1.000
+            <span data-i18n="quiz.opt2.1">Até R$1.000</span>
           </button>
           <button class="quiz-option" onclick="qAnswer(1, 'medio')">
             <div class="quiz-option-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            Entre R$1.000 e R$3.000
+            <span data-i18n="quiz.opt2.2">Entre R$1.000 e R$3.000</span>
           </button>
           <button class="quiz-option" onclick="qAnswer(1, 'alto')">
             <div class="quiz-option-icon">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
             </div>
-            Acima de R$3.000
+            <span data-i18n="quiz.opt2.3">Acima de R$3.000</span>
           </button>
         </div>
       </div>
@@ -74,9 +74,9 @@
         <div id="qresult-cards"></div>
         <div class="result-actions">
           <a href="#servicos" class="btn-quiz-primary">
-            Ver mais informações
+            <span data-i18n="quiz.btn.info">Ver mais informações</span>
           </a>
-          <button class="btn-restart" onclick="qRestart()">Refazer o quiz</button>
+          <button class="btn-restart" onclick="qRestart()" data-i18n="quiz.btn.restart">Refazer o quiz</button>
         </div>
       </div>
 

@@ -7,17 +7,17 @@
 <section class="servicos" id="servicos">
   <div class="container">
     <div class="servicos-header">
-      <div class="section-label">Serviços</div>
+      <div class="section-label" data-i18n="servicos.label">Serviços</div>
       <div class="servicos-header-row">
-        <h2 class="section-title">O que posso fazer pelo seu negócio</h2>
-        <a href="#quiz" class="btn-quiz-header">Não sei qual serviço escolher</a>
+        <h2 class="section-title" data-i18n="servicos.title">O que posso fazer pelo seu negócio</h2>
+        <a href="#quiz" class="btn-quiz-header" data-i18n="servicos.quiz.btn">Não sei qual serviço escolher</a>
       </div>
-      <p>Cada projeto é desenvolvido de forma personalizada, pensando no visual, na experiência e no que realmente faz sentido para o seu negócio.</p>
+      <p data-i18n="servicos.desc">Cada projeto é desenvolvido de forma personalizada, pensando no visual, na experiência e no que realmente faz sentido para o seu negócio.</p>
     </div>
 
     <div class="servicos-carousel-wrapper">
       <div class="swipe-hint" id="swipeHint">
-        <span>Deslize para ver mais</span>
+        <span data-i18n="servicos.swipe">Deslize para ver mais</span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
       </div>
       <button class="carousel-btn" id="srv-prev" aria-label="Anterior"><svg style="display:block;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
@@ -35,7 +35,7 @@
           <p>Mantenha seu site sempre atualizado e funcionando. Atualizações, ajustes e correções sem preocupação.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -50,7 +50,7 @@
           </div>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.recomendado">Recomendado para</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -63,11 +63,11 @@
           </div>
           <div class="servico-footer">
             <div>
-              <div class="servico-price-label">Mensalidade</div>
+              <div class="servico-price-label" data-i18n="servicos.preco.mensal">Mensalidade</div>
               <div class="servico-price">R$400</div>
-              <div class="servico-prazo">Contrato mensal renovável</div>
+              <div class="servico-prazo" data-i18n="servicos.prazo.suporte">Contrato mensal renovável</div>
             </div>
-            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Suporte%20Mensal!" class="btn-servico" target="_blank">Solicitar serviço</a>
+            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Suporte%20Mensal!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
         </div>
 
@@ -83,7 +83,7 @@
           <p>Solução completa sob medida para o seu negócio, desenvolvida do zero com foco em estratégia e escalabilidade.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -99,7 +99,7 @@
           </div>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.recomendado">Recomendado para</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -113,11 +113,11 @@
           </div>
           <div class="servico-footer">
             <div>
-              <div class="servico-price-label">A partir de</div>
+              <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$6.000</div>
               <div class="servico-prazo">Prazo: 30–60 dias úteis</div>
             </div>
-            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Site%20Personalizado!" class="btn-servico" target="_blank">Solicitar serviço</a>
+            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Site%20Personalizado!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
         </div>
 
@@ -132,7 +132,7 @@
           <p>Personalidade para sua marca em todos os pontos de contato com o público, fortalecendo seu posicionamento visual.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -150,7 +150,7 @@
           </div>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.recomendado">Recomendado para</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -164,11 +164,11 @@
           </div>
           <div class="servico-footer">
             <div>
-              <div class="servico-price-label">A partir de</div>
+              <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$400</div>
               <div class="servico-prazo">Prazo: 10–14 dias úteis</div>
             </div>
-            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Identidade%20Visual!" class="btn-servico" target="_blank">Solicitar serviço</a>
+            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Identidade%20Visual!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
         </div>
 
@@ -183,7 +183,7 @@
           <p>Site profissional desenvolvido em plataforma visual, com design personalizado e qualidade sem grande investimento.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -199,7 +199,7 @@
           </div>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.recomendado">Recomendado para</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -212,11 +212,11 @@
           </div>
           <div class="servico-footer">
             <div>
-              <div class="servico-price-label">A partir de</div>
+              <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$800</div>
               <div class="servico-prazo">Prazo: 7–10 dias úteis</div>
             </div>
-            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Site%20Acess%C3%ADvel!" class="btn-servico" target="_blank">Solicitar serviço</a>
+            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Site%20Acess%C3%ADvel!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
         </div>
 
@@ -231,7 +231,7 @@
           <p>Página focada em converter visitantes em clientes, com design estratégico e código otimizado.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -246,7 +246,7 @@
           </div>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.recomendado">Recomendado para</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -259,11 +259,11 @@
           </div>
           <div class="servico-footer">
             <div>
-              <div class="servico-price-label">A partir de</div>
+              <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$1.200</div>
               <div class="servico-prazo">Prazo: 15–20 dias úteis</div>
             </div>
-            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Landing%20Page!" class="btn-servico" target="_blank">Solicitar serviço</a>
+            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Landing%20Page!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
         </div>
 
@@ -278,7 +278,7 @@
           <p>E-commerce completo para vender online com design estratégico, experiência de compra fluida e credibilidade.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">O que está incluso</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -295,7 +295,7 @@
           </div>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
-              <span class="card-acc-label">Recomendado para</span>
+              <span class="card-acc-label" data-i18n="servicos.acc.recomendado">Recomendado para</span>
               <svg class="card-acc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
             </button>
             <div class="card-acc-body">
@@ -308,11 +308,11 @@
           </div>
           <div class="servico-footer">
             <div>
-              <div class="servico-price-label">A partir de</div>
+              <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$4.000</div>
               <div class="servico-prazo">Prazo: 30–45 dias úteis</div>
             </div>
-            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Loja%20Virtual!" class="btn-servico" target="_blank">Solicitar serviço</a>
+            <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Loja%20Virtual!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
         </div>
 

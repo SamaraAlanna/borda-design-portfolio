@@ -1,13 +1,13 @@
 <section class="faq" id="faq">
   <div class="container">
     <div class="faq-header">
-      <div class="section-label">FAQ</div>
-      <h2 class="section-title">Perguntas frequentes</h2>
+      <div class="section-label" data-i18n="faq.label">FAQ</div>
+      <h2 class="section-title" data-i18n="faq.title">Perguntas frequentes</h2>
     </div>
 
     <!-- HOSPEDAGEM E DOMÍNIO -->
     <div class="faq-group">
-      <div class="faq-group-label">Hospedagem e domínio</div>
+      <div class="faq-group-label" data-i18n="faq.group1">Hospedagem e domínio</div>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-trigger" onclick="toggleFaq(this)">
@@ -41,7 +41,7 @@
 
     <!-- PROCESSO -->
     <div class="faq-group">
-      <div class="faq-group-label">Processo</div>
+      <div class="faq-group-label" data-i18n="faq.group2">Processo</div>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-trigger" onclick="toggleFaq(this)">
@@ -66,7 +66,7 @@
 
     <!-- PAGAMENTO -->
     <div class="faq-group">
-      <div class="faq-group-label">Pagamento</div>
+      <div class="faq-group-label" data-i18n="faq.group3">Pagamento</div>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-trigger" onclick="toggleFaq(this)">
@@ -82,7 +82,7 @@
 
     <!-- APÓS A ENTREGA -->
     <div class="faq-group">
-      <div class="faq-group-label">Após a entrega</div>
+      <div class="faq-group-label" data-i18n="faq.group4">Após a entrega</div>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-trigger" onclick="toggleFaq(this)">
@@ -116,7 +116,7 @@
 
     <!-- GERAL -->
     <div class="faq-group">
-      <div class="faq-group-label">Geral</div>
+      <div class="faq-group-label" data-i18n="faq.group5">Geral</div>
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-trigger" onclick="toggleFaq(this)">
