@@ -31,8 +31,8 @@
             </div>
             <span class="servico-badge-blue">Recomendado</span>
           </div>
-          <h3>Suporte Mensal</h3>
-          <p>Mantenha seu site sempre atualizado e funcionando. Atualizações, ajustes e correções sem preocupação.</p>
+          <h3 data-i18n="srv.suporte.title">Suporte Mensal</h3>
+          <p data-i18n="srv.suporte.desc">Mantenha seu site sempre atualizado e funcionando. Atualizações, ajustes e correções sem preocupação.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
@@ -40,11 +40,11 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Atualizações de texto e imagens</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Pequenos ajustes de layout</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Correção de bugs</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Atualizações <span class="rosa">ilimitadas</span></div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.i1">Atualizações de texto e imagens</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.i2">Pequenos ajustes de layout</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.i3">Correção de bugs</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.i4" data-i18n-html="1">Atualizações <span class="rosa">ilimitadas</span></span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.i5">Suporte via WhatsApp</span></div>
               </div>
             </div>
           </div>
@@ -55,9 +55,9 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Clientes com site já entregue</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Quem quer manter o site sempre atualizado</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Negócios em crescimento</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.r1">Clientes com site já entregue</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.r2">Quem quer manter o site sempre atualizado</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.suporte.r3">Negócios em crescimento</span></div>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
             <div>
               <div class="servico-price-label" data-i18n="servicos.preco.mensal">Mensalidade</div>
               <div class="servico-price">R$400</div>
-              <div class="servico-prazo" data-i18n="servicos.prazo.suporte">Contrato mensal renovável</div>
+              <div class="servico-prazo" data-i18n="srv.suporte.prazo">Contrato mensal renovável</div>
             </div>
             <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Suporte%20Mensal!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
@@ -79,8 +79,8 @@
             </div>
             <span class="servico-badge">Mais pedido</span>
           </div>
-          <h3>Site Personalizado</h3>
-          <p>Solução completa sob medida para o seu negócio, desenvolvida do zero com foco em estratégia e escalabilidade.</p>
+          <h3 data-i18n="srv.personalizado.title">Site Personalizado</h3>
+          <p data-i18n="srv.personalizado.desc">Solução completa sob medida para o seu negócio, desenvolvida do zero com foco em estratégia e escalabilidade.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
@@ -88,12 +88,12 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Design exclusivo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Desenvolvimento completo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo + SEO básico</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Integrações com WhatsApp e redes sociais</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Páginas + revisões <span class="rosa">ilimitadas</span></div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.i1">Design exclusivo</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.i2">Desenvolvimento completo</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.i3">Responsivo + SEO básico</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.i4">Integrações com WhatsApp e redes sociais</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.i5" data-i18n-html="1">Páginas + revisões <span class="rosa">ilimitadas</span></span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.i6">Suporte via WhatsApp</span></div>
               </div>
             </div>
           </div>
@@ -104,10 +104,10 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Empresas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Profissionais autônomos</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas pessoais</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.r1">Marcas</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.r2">Empresas</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.r3">Profissionais autônomos</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.personalizado.r4">Marcas pessoais</span></div>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
             <div>
               <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$6.000</div>
-              <div class="servico-prazo">Prazo: 30–60 dias úteis</div>
+              <div class="servico-prazo" data-i18n="srv.personalizado.prazo">Prazo: 30–60 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Site%20Personalizado!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
@@ -128,8 +128,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
             </div>
           </div>
-          <h3>Identidade Visual</h3>
-          <p>Personalidade para sua marca em todos os pontos de contato com o público, fortalecendo seu posicionamento visual.</p>
+          <h3 data-i18n="srv.identidade.title">Identidade Visual</h3>
+          <p data-i18n="srv.identidade.desc">Personalidade para sua marca em todos os pontos de contato com o público, fortalecendo seu posicionamento visual.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
@@ -137,14 +137,14 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Logotipo + variações</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Paleta de cores + tipografia</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Ícones organizados</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Mockup de aplicação</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Manual de marca</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Arquivos em AI, PDF e PNG</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Revisões <span class="rosa">ilimitadas</span></div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i1">Logotipo + variações</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i2">Paleta de cores + tipografia</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i3">Ícones organizados</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i4">Mockup de aplicação</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i5">Manual de marca</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i6">Arquivos em AI, PDF e PNG</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i7" data-i18n-html="1">Revisões <span class="rosa">ilimitadas</span></span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.i8">Suporte via WhatsApp</span></div>
               </div>
             </div>
           </div>
@@ -155,10 +155,10 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Empresas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Profissionais autônomos</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas pessoais</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.r1">Marcas</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.r2">Empresas</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.r3">Profissionais autônomos</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.identidade.r4">Marcas pessoais</span></div>
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@
             <div>
               <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$400</div>
-              <div class="servico-prazo">Prazo: 10–14 dias úteis</div>
+              <div class="servico-prazo" data-i18n="srv.identidade.prazo">Prazo: 10–14 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Identidade%20Visual!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
@@ -179,8 +179,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             </div>
           </div>
-          <h3>Site Acessível</h3>
-          <p>Site profissional desenvolvido em plataforma visual, com design personalizado e qualidade sem grande investimento.</p>
+          <h3 data-i18n="srv.acessivel.title">Site Acessível</h3>
+          <p data-i18n="srv.acessivel.desc">Site profissional desenvolvido em plataforma visual, com design personalizado e qualidade sem grande investimento.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
@@ -188,12 +188,12 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>WordPress, Shopify ou Nuvemshop</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Design personalizado</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo + SEO básico</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Integrações com WhatsApp e redes sociais</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Ajustes <span class="rosa">ilimitados</span></div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.i1">WordPress, Shopify ou Nuvemshop</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.i2">Design personalizado</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.i3">Responsivo + SEO básico</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.i4">Integrações com WhatsApp e redes sociais</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.i5" data-i18n-html="1">Ajustes <span class="rosa">ilimitados</span></span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.i6">Suporte via WhatsApp</span></div>
               </div>
             </div>
           </div>
@@ -204,9 +204,9 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Pequenos negócios</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Pequenos empreendedores</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Quem está começando</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.r1">Pequenos negócios</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.r2">Pequenos empreendedores</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.acessivel.r3">Quem está começando</span></div>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@
             <div>
               <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$800</div>
-              <div class="servico-prazo">Prazo: 7–10 dias úteis</div>
+              <div class="servico-prazo" data-i18n="srv.acessivel.prazo">Prazo: 7–10 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20no%20Site%20Acess%C3%ADvel!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
@@ -227,8 +227,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             </div>
           </div>
-          <h3>Landing Page</h3>
-          <p>Página focada em converter visitantes em clientes, com design estratégico e código otimizado.</p>
+          <h3 data-i18n="srv.landing.title">Landing Page</h3>
+          <p data-i18n="srv.landing.desc">Página focada em converter visitantes em clientes, com design estratégico e código otimizado.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
@@ -236,11 +236,11 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Design exclusivo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Desenvolvimento completo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>1 página · 1 rodada de ajustes</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.i1">Design exclusivo</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.i2">Desenvolvimento completo</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.i3">Responsivo</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.i4">1 página · 1 rodada de ajustes</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.i5">Suporte via WhatsApp</span></div>
               </div>
             </div>
           </div>
@@ -251,9 +251,9 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Empresas · Lançamentos</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Produtos digitais</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Profissionais autônomos</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.r1">Empresas · Lançamentos</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.r2">Produtos digitais</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.landing.r3">Profissionais autônomos</span></div>
               </div>
             </div>
           </div>
@@ -261,7 +261,7 @@
             <div>
               <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$1.200</div>
-              <div class="servico-prazo">Prazo: 15–20 dias úteis</div>
+              <div class="servico-prazo" data-i18n="srv.landing.prazo">Prazo: 15–20 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Landing%20Page!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
@@ -274,8 +274,8 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
             </div>
           </div>
-          <h3>Loja Virtual</h3>
-          <p>E-commerce completo para vender online com design estratégico, experiência de compra fluida e credibilidade.</p>
+          <h3 data-i18n="srv.loja.title">Loja Virtual</h3>
+          <p data-i18n="srv.loja.desc">E-commerce completo para vender online com design estratégico, experiência de compra fluida e credibilidade.</p>
           <div class="card-acc">
             <button class="card-acc-trigger" onclick="toggleCard(this)">
               <span class="card-acc-label" data-i18n="servicos.acc.incluso">O que está incluso</span>
@@ -283,13 +283,13 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Design exclusivo</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Loja completa com carrinho e checkout</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Integração com meios de pagamento</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Responsivo + SEO básico</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Integrações com redes sociais</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Páginas + revisões <span class="rosa">ilimitadas</span></div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Suporte via WhatsApp</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.i1">Design exclusivo</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.i2">Loja completa com carrinho e checkout</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.i3">Integração com meios de pagamento</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.i4">Responsivo + SEO básico</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.i5">Integrações com redes sociais</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.i6" data-i18n-html="1">Páginas + revisões <span class="rosa">ilimitadas</span></span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.i7">Suporte via WhatsApp</span></div>
               </div>
             </div>
           </div>
@@ -300,9 +300,9 @@
             </button>
             <div class="card-acc-body">
               <div class="card-acc-inner">
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Lojas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Marcas</div>
-                <div class="card-acc-item"><div class="card-acc-dot"></div>Produtos digitais</div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.r1">Lojas</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.r2">Marcas</span></div>
+                <div class="card-acc-item"><div class="card-acc-dot"></div><span data-i18n="srv.loja.r3">Produtos digitais</span></div>
               </div>
             </div>
           </div>
@@ -310,7 +310,7 @@
             <div>
               <div class="servico-price-label" data-i18n="servicos.preco.label">A partir de</div>
               <div class="servico-price">R$4.000</div>
-              <div class="servico-prazo">Prazo: 30–45 dias úteis</div>
+              <div class="servico-prazo" data-i18n="srv.loja.prazo">Prazo: 30–45 dias úteis</div>
             </div>
             <a href="https://wa.me/5541920058670?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20tenho%20interesse%20na%20Loja%20Virtual!" class="btn-servico" target="_blank" data-i18n="servicos.btn.solicitar">Solicitar serviço</a>
           </div>
