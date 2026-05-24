@@ -152,7 +152,7 @@ function smoothScrollTo(target, duration, center) {
   var fabTop = document.createElement('a');
   fabTop.href = '#hero';
   fabTop.setAttribute('aria-label', 'Voltar ao topo');
-  fabTop.style.cssText = 'position:fixed;bottom:1.75rem;left:50%;transform:translateX(-50%);z-index:1000;width:44px;height:44px;background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--accent);transition:background 0.2s,box-shadow 0.2s;';
+  fabTop.style.cssText = 'position:fixed;bottom:1.75rem;left:50%;transform:translateX(-50%);z-index:9997;width:44px;height:44px;background:var(--accent-dim);border:1px solid var(--accent-border);border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--accent);transition:background 0.2s,box-shadow 0.2s;';
   fabTop.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>';
   fabTop.addEventListener('mouseenter', function() {
     this.style.background = 'var(--accent)';
