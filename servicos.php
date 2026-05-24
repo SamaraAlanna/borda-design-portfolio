@@ -1,3 +1,9 @@
+<style>
+.card-acc { border: 0.5px solid var(--accent-border) !important; }
+.card-acc-trigger { background: var(--accent-dim) !important; }
+.card-acc-label { color: var(--accent) !important; }
+.card-acc-chevron { color: var(--accent) !important; }
+</style>
 <section class="servicos" id="servicos">
   <div class="container">
     <div class="servicos-header">
