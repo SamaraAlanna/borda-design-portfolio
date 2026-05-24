@@ -457,6 +457,16 @@ function applyTranslations() {
     }
   });
   document.documentElement.lang = currentLang === "pt" ? "pt-BR" : "en";
+  var btnCV = document.getElementById('btnCV');
+  if (btnCV) {
+    if (currentLang === 'en') {
+      btnCV.href = 'uploads/CV_Samara_EN.pdf';
+      btnCV.setAttribute('download', 'CV_Samara_Alanna_EN.pdf');
+    } else {
+      btnCV.href = 'uploads/CV_Samara.pdf';
+      btnCV.setAttribute('download', 'CV_Samara_Alanna.pdf');
+    }
+  }
 }
 
 function updateLangBtn() {
