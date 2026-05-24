@@ -258,11 +258,11 @@ function applyTranslations() {
 }
 
 function updateLangBtn() {
-  var btn = document.getElementById("langToggle");
+  var btn = document.getElementById('langToggle');
   if (!btn) return;
-  var isPt = currentLang === "pt";
-  btn.querySelector(".flag-br").style.display = isPt ? "none" : "flex";
-  btn.querySelector(".flag-en").style.display = isPt ? "flex" : "none";
+  var isPt = currentLang === 'pt';
+  btn.querySelector('.flag-br').style.opacity = isPt ? '1' : '0.35';
+  btn.querySelector('.flag-en').style.opacity = isPt ? '0.35' : '1';
 }
 
 document.addEventListener("DOMContentLoaded", function () {

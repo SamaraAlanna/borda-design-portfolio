@@ -13,12 +13,12 @@
       <span></span><span></span><span></span>
     </button>
     <div style="display:flex; align-items:center; gap:12px;">
-      <button id="langToggle" onclick="setLang(currentLang === 'pt' ? 'en' : 'pt')" aria-label="Trocar idioma" style="background:transparent;border:none;padding:0 0.4rem;display:flex;align-items:center;">
-        <span class="flag-br" style="display:flex;width:26px;height:26px;border-radius:50%;overflow:hidden;border:1.5px solid var(--border-hover);">
-          <img src="https://flagcdn.com/w40/us.png" alt="English" style="width:100%;height:100%;object-fit:cover;">
+      <button id="langToggle" onclick="setLang(currentLang === 'pt' ? 'en' : 'pt')" aria-label="Trocar idioma" style="background:transparent;border:none;padding:0 0.4rem;display:flex;align-items:center;gap:6px;">
+        <span class="flag-br" style="width:24px;height:24px;border-radius:50%;overflow:hidden;border:1.5px solid var(--border-hover);display:flex;opacity:1;transition:opacity 0.2s;">
+          <img src="https://flagcdn.com/w40/br.png" alt="PT" style="width:100%;height:100%;object-fit:cover;">
         </span>
-        <span class="flag-en" style="display:none;width:26px;height:26px;border-radius:50%;overflow:hidden;border:1.5px solid var(--border-hover);">
-          <img src="https://flagcdn.com/w40/br.png" alt="Português" style="width:100%;height:100%;object-fit:cover;">
+        <span class="flag-en" style="width:24px;height:24px;border-radius:50%;overflow:hidden;border:1.5px solid var(--border-hover);display:flex;opacity:0.35;transition:opacity 0.2s;">
+          <img src="https://flagcdn.com/w40/us.png" alt="EN" style="width:100%;height:100%;object-fit:cover;">
         </span>
       </button>
       <button class="theme-toggle-btn" id="themeToggle" aria-label="Alternar tema" onclick="toggleTheme()">
