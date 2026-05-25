@@ -9,10 +9,10 @@
       <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
       <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
     </ul>
-    <button class="nav-menu-btn" id="menuBtn" aria-label="Menu" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </button>
     <div style="display:flex; align-items:center; gap:12px;">
+      <button class="nav-menu-btn" id="menuBtn" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
       <button id="langToggle" onclick="setLang(currentLang === 'pt' ? 'en' : 'pt')" aria-label="Trocar idioma" style="background:transparent;border:none;padding:0 0.4rem;display:flex;align-items:center;gap:6px;">
         <span class="flag-br" style="width:24px;height:24px;border-radius:50%;overflow:hidden;border:1.5px solid var(--border-hover);display:flex;opacity:1;transition:opacity 0.2s;">
           <img src="https://flagcdn.com/w40/br.png" alt="PT" style="width:100%;height:100%;object-fit:cover;">
