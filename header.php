@@ -86,6 +86,12 @@
   .nav-cta { display: none; }
   .nav-menu-btn { display: flex; }
 }
+
+@media (max-width: 960px) {
+  .nav-menu-btn {
+    margin-left: 8px;
+  }
+}
 </style>
 
 <script>
