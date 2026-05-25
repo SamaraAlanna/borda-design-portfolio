@@ -79,6 +79,8 @@
   margin-left: auto;
 }
 
+.nav-cta { margin-left: 8px; }
+
 @media (max-width: 960px) {
   .nav-links { display: none; }
   .nav-cta { display: none; }
