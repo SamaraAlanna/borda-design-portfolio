@@ -1207,7 +1207,7 @@ nav {
   border-radius: var(--radius);
   overflow-x: scroll;
   overflow-y: visible;
-  overscroll-behavior: none;
+  overscroll-behavior-x: contain;
   -webkit-overflow-scrolling: touch;
   touch-action: auto;
   scroll-snap-type: x mandatory;
