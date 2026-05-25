@@ -9,7 +9,7 @@
       <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
       <li><a href="#contato" data-i18n="nav.contato">Contato</a></li>
     </ul>
-    <div style="display:flex; align-items:center; gap:12px;">
+    <div style="display:flex; flex-direction: row; align-items:center; gap:12px;">
       <button class="nav-menu-btn" id="menuBtn" aria-label="Menu" onclick="toggleMenu()">
         <span></span><span></span><span></span>
       </button>
@@ -69,6 +69,12 @@
 
 :root:not([data-theme="light"]) .icon-moon,
 :root:not([data-theme="light"]) .icon-moon-text { display: flex; }
+
+@media (max-width: 960px) {
+  #langToggle { order: 2; }
+  .theme-toggle-btn { order: 3; }
+  .nav-menu-btn { order: 1; }
+}
 </style>
 
 <script>
