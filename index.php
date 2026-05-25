@@ -3,8 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>Borda Design | UX/UI Designer e Desenvolvedora</title>
+<meta name="description" content="Estúdio de design e desenvolvimento de sites. Identidade Visual, UX/UI Design e sites personalizados para destacar sua marca.">
+<meta name="keywords" content="ux design, ui design, web design, identidade visual, desenvolvimento de sites, branding, Samara Alanna">
+<meta name="author" content="Samara Alanna">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Borda Design | UX/UI Designer e Desenvolvedora">
+<meta property="og:description" content="Estúdio de design e desenvolvimento de sites. Identidade Visual, UX/UI Design e sites personalizados.">
+<meta property="og:image" content="https://portfoliosamara.com.br/uploads/miriam-araujo.png">
+<meta property="og:url" content="https://portfoliosamara.com.br">
+<meta property="og:type" content="website">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Borda Design | UX/UI Designer e Desenvolvedora">
+<meta name="twitter:description" content="Estúdio de design e desenvolvimento de sites.">
+<meta name="twitter:image" content="https://portfoliosamara.com.br/uploads/miriam-araujo.png">
+
+<!-- Favicon -->
 <link rel="icon" type="image/png" href="favicon.png">
-<title>Samara Alanna — Designer & Desenvolvedora</title>
+
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script src="translations.js"></script>
