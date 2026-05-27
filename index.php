@@ -37,6 +37,36 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="translations.js" defer></script>
+
+  <!-- Schema: Organization -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Borda Design",
+      "url": "https://bordadesign.com.br",
+      "logo": "https://bordadesign.com.br/uploads/og-image.jpg",
+      "founder": {
+        "@type": "Person",
+        "name": "Samara Alanna"
+      },
+      "description": "Estúdio de design e desenvolvimento de sites. Identidade Visual, UX/UI Design e sites personalizados.",
+      "sameAs": [
+        "https://www.instagram.com/bordadesignn",
+        "https://www.linkedin.com/in/samaraalanna"
+      ]
+    }
+  </script>
+
+  <!-- Schema: WebSite -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Borda Design",
+      "url": "https://bordadesign.com.br"
+    }
+  </script>
 </head>
 
 <body>
