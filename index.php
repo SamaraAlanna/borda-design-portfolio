@@ -67,6 +67,8 @@
       "url": "https://bordadesign.com.br"
     }
   </script>
+  <script src="https://t.contentsquare.net/uxa/afcb342743765.js">
+  </script>
 </head>
 
 <body>
