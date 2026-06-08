@@ -139,25 +139,12 @@ on:
 
 ---
 
-## Serviços oferecidos
-
-| Serviço | Valor | Prazo |
-|---|---|---|
-| Suporte Mensal | R$400/mês | Contrato mensal |
-| Identidade Visual | A partir de R$400 | 10–14 dias |
-| Site Acessível | A partir de R$800 | 7–10 dias |
-| Landing Page | A partir de R$1.200 | 15–20 dias |
-| Loja Virtual | A partir de R$4.000 | 30–45 dias |
-| Site Personalizado | A partir de R$6.000 | 30–60 dias |
-
----
-
 ## Contato
 
 **Samara Alanna** — UX/UI Designer e Desenvolvedora Full Stack
 
-- 🌐 [bordadesign.com.br](https://bordadesign.com.br)
-- 💼 [linkedin.com/in/samaraalanna](https://www.linkedin.com/in/samaraalanna)
-- 🎨 [behance.net/samaraalanna](https://www.behance.net/samaraalanna)
-- 📸 [instagram.com/bordadesignn](https://www.instagram.com/bordadesignn)
-- 💬 [WhatsApp](https://wa.me/5541920058670)
+- [bordadesign.com.br](https://bordadesign.com.br)
+- [linkedin.com/in/samaraalanna](https://www.linkedin.com/in/samaraalanna)
+- [behance.net/samaraalanna](https://www.behance.net/samaraalanna)
+- [instagram.com/bordadesignn](https://www.instagram.com/bordadesignn)
+- [WhatsApp](https://wa.me/5541920058670)
